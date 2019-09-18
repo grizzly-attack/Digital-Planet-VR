@@ -1,0 +1,24 @@
+.questions__title {
+  @include title;
+}
+
+.questions__list {
+  @include list-reset;
+}
+
+.questions__item {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+.questions__question {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 21px;
+  opacity: 0.8;
+}
+
+.questions__answer {
+  margin: 0;
+}

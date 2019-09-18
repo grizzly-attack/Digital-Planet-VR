@@ -1,0 +1,19 @@
+.explanation__title {
+  @include title;
+}
+
+.explanation__list {
+  @include list-reset;
+}
+
+.explanation__item-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.explanation__item-text {
+  margin: 0;
+  line-height: 1.3;
+}

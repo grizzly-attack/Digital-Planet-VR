@@ -1,0 +1,21 @@
+.page-footer__social {
+  @include list-reset;
+}
+
+.page-footer__link {
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-footer__text {
+  margin: 0;
+
+  font-size: 13px;
+  opacity: 0.64;
+}

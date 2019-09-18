@@ -1,0 +1,32 @@
+.popup {
+  display: none;
+  color: #1c1c1c;
+}
+
+.popup__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+
+  text-align: center;
+  line-height: 1.4;
+}
+
+.popup__form {
+  background-color: #f3f3f3;
+}
+
+.popup__message {
+  background-color: #f3f3f3;
+}
+
+.popup__text {
+  margin: 0;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.popup__button {
+  color: rgba(28, 28, 28, 0.4);
+}
