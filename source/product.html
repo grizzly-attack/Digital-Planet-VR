@@ -87,43 +87,50 @@
     <section class="product">
       <h1 class="visually-hidden">Информация о продукте</h1>
       <p class="product__title">Что такое VR-планетарий?</p>
-      <p class="product__text">Это образовательная программа, использующая технологию виртуальной реальности.</p>
-      <p class="product__text">Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария на всех очках одновременно. В коллекции фильмов идут обучающие картины о космосе, астрономии  и обществознании.</p>
-      <p class="product__text">За счёт реалестичности  и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.</p>
+      <div class="product__wrapper">
+        <div class="product__text-container">
+          <p class="product__text">Это образовательная программа, использующая технологию виртуальной реальности.</p>
+          <p class="product__text">Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария на всех очках одновременно. В коллекции фильмов идут обучающие картины о космосе, астрономии  и обществознании.</p>
+          <p class="product__text">За счёт реалестичности  и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.</p>
+        </div>
 
-      <div class="product__slider">
-        <p class="product__slider-content">Что показываем в планетарии</p>
-        <ul class="product__slider-list">
-          <li class="product__slider-item">
-            <img src="img/astronaut-in-outer-space.jpg">
+        <div class="product__slider">
+          <p class="product__slider-content">Что показываем в планетарии</p>
+          <ul class="product__slider-list">
+            <li class="product__slider-item">
+              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+            </li>
+            <li class="product__slider-item product__slider-item--hidden">
+              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+            </li>
+            <li class="product__slider-item product__slider-item--hidden">
+              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+            </li>
+            <li class="product__slider-item product__slider-item--hidden">
+              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+            </li>
+            <li class="product__slider-item product__slider-item--hidden">
+              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+            </li>
+            <li class="product__slider-item product__slider-item--hidden">
+              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+            </li>
+          </ul>
+
+          <div class="product__slider-container">
             <p class="product__slider-number"><span class="product__slider-number--current">01 /</span> 06</p>
-          </li>
-          <li class="product__slider-item">
-            <img src="img/astronaut-in-outer-space.jpg">
-            <p class="product__slider-number"><span class="product__slider-number--current">02 /</span> 06</p>
-          </li>
-          <li class="product__slider-item">
-            <img src="img/astronaut-in-outer-space.jpg">
-            <p class="product__slider-number"><span class="product__slider-number--current">03 /</span> 06</p>
-          </li>
-          <li class="product__slider-item">
-            <img src="img/astronaut-in-outer-space.jpg">
-            <p class="product__slider-number"><span class="product__slider-number--current">04 /</span> 06</p>
-          </li>
-          <li class="product__slider-item">
-            <img src="img/astronaut-in-outer-space.jpg">
-            <p class="product__slider-number"><span class="product__slider-number--current">05 /</span> 06</p>
-          </li>
-          <li class="product__slider-item">
-            <img src="img/astronaut-in-outer-space.jpg">
-            <p class="product__slider-number"><span class="product__slider-number--current">06 /</span> 06</p>
-          </li>
-        </ul>
 
-        <button class="product__slider-button product__slider-button--back" type="button" disabled><span class="visually-hidden">Назад</span></button>
-        <button class="product__slider-button product__slider-button--next" type="button"><span class="visually-hidden">Вперед</span></button>
+            <div class="product__slider-buttons">
+              <button class="product__slider-button product__slider-button--back" type="button" disabled><span class="visually-hidden">Назад</span></button>
+              <button class="product__slider-button product__slider-button--next" type="button"><span class="visually-hidden">Вперед</span></button>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <section class="scroll">
+      <a class="scroll__link" href="explanation.html"><span class="visually-hidden">Скролл вниз</span></a>
     </section>
 
     <section class="popup">
@@ -154,7 +161,16 @@
   </main>
 
   <footer class="page-footer">
-    <a href="#"><span class="visually-hidden">Скролл вниз</span></a>
+    <p class="page-footer__text">© Digital Planet, 2019</p>
+    <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
+    <ul class="page-footer__social">
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link page-footer__social-link--fb"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="#fb"></use></svg><span class="visually-hidden">facebook</span></a>
+      </li>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link page-footer__social-link--vk"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="#vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+      </li>
+    </ul>
   </footer>
 </body>
 </html>

@@ -20,8 +20,14 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 1.4;
-  padding-right: 55px;
-  padding-bottom: 6px;
+  padding-right: 31px;
   border-bottom: solid 3px $green;
   display: inline-block;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+
+    font-size: 28px;
+    padding-right: 0;
+  }
 }

@@ -1,5 +1,13 @@
 .page-footer {
+  max-width: 1278px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+
   flex-shrink: 0;
+  display: none;
 }
 
 .page-footer--hidden {
@@ -26,4 +34,49 @@
 
   font-size: 13px;
   opacity: 0.64;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer {
+    display: block;
+
+    @include padding;
+  }
+
+  .page-footer__social {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include list-reset;
+    padding-top: 20px;
+    padding-bottom: 47px;
+  }
+
+  .page-footer__social-item {
+    width: 24px;
+    margin-right: 9px;
+  }
+
+  .page-footer__social-image {
+    fill: #ffffff;
+    opacity: 0.64;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .page-footer__social-link {
+    display: block;
+  }
+
+  .page-footer__social-link--fb {
+    padding-top: 2px;
+    padding-left: 9px;
+  }
+
+  .page-footer__social-link--vk {
+    padding-top: 2px;
+    padding-left: 3px;
+  }
 }
