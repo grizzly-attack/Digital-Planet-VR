@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -75,6 +78,8 @@ img {
 }
 
 .main-background {
-  background-image: url("../img/body-background-main.png");
-  background-size: 1366px auto;
+  background-image: url("../img/body-background-main-2.png"), url("../img/body-background-main.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1366px auto, 1366px auto;
+  background-position: 50% 0, 50% 0;
 }

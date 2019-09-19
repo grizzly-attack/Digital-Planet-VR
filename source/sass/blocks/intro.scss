@@ -1,13 +1,53 @@
-.intro__wrapper {
+.intro {
   max-width: 1278px;
   margin: 0 auto;
-  margin-top: 153px;
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/kid_VR.png");
+    background-repeat: no-repeat;
+    background-size: 430px 350px;
+    background-position: 100% 100%;
+
+    width: 530px;
+    height: 350px;
+
+    right: -44px;
+    bottom: 0;
+  }
+}
+
+.intro__main {
+  flex-grow: 1;
+}
+
+.intro__footer {
+  flex-shrink: 0;
+}
+
+.intro__wrapper {
+  margin-top: 140px;
   padding-right: 20px;
-  padding-left: 56px;
+  padding-left: 77px;
+}
+
+.intro__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 154px;
+
+  @include padding;
+  padding-bottom: 35px;
 }
 
 .intro__title {
   margin: 0;
+  margin-bottom: 10px;
 
   font-weight: 400;
   font-size: 96px;
@@ -19,17 +59,14 @@
   font-size: 17px;
 }
 
-.intro__button-container {
-  margin-top: 71px;
-}
-
 .intro__button {
   display: inline-block;
-  padding: 17px 40px;
-  padding-bottom: 18px;
-  padding-left: 82px;
-  min-height: 63px;
+  padding: 18px 10px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+
   font-size: 21px;
+  text-align: left;
 }
 
 .intro__button-order {
@@ -46,35 +83,51 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/order.svg");
+    background-image: url("../img/order-icon.svg");
     background-repeat: no-repeat;
     background-size: 31px 31px;
     background-position: 0 0;
     width: 31px;
     height: 31px;
-    top: 0;
-    left: 0;
+    top: 16px;
+    left: 37px;
   }
 }
 
 .intro__button-video {
+  position: relative;
   width: 201px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/video-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 31px 31px;
+    background-position: 0 0;
+    width: 31px;
+    height: 31px;
+    top: 16px;
+    left: 37px;
+  }
 }
 
 .intro__social {
   display: flex;
   flex-wrap: wrap;
 
+  width: 14%;
+
   @include list-reset;
-  padding-top: 20px;
+  margin-right: 24.5%;
 }
 
 .intro__social-item {
   width: 32px;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .intro__social-image {
@@ -88,6 +141,8 @@
 
 .intro__social-link {
   display: block;
+
+  cursor: pointer;
 }
 
 .intro__social-link--fb {
@@ -101,6 +156,11 @@
 }
 
 .intro__link {
+  position: relative;
+
+  display: inline-block;
+  padding-bottom: 3px;
+
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.12em;
@@ -109,4 +169,111 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 10px;
+    height: 9px;
+
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    transform: rotate(-45deg) translateX(-50%);
+    bottom: 0;
+    left: 50%;
+  }
+}
+
+.intro__text {
+  margin: 0;
+
+  width: 23%;
+
+  text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    &::before {
+      display: none;
+    }
+  }
+
+  .intro__wrapper {
+    margin-bottom: 20px;
+    margin-top: 88px;
+
+    @include padding;
+
+    text-align: center;
+  }
+
+  .intro__title {
+    margin-top: 13px;
+    font-size: 36px;
+  }
+
+  .intro__message {
+    padding-left: 31px;
+    padding-right: 31px;
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  .intro__button-container {
+    margin-top: 53px;
+  }
+
+  .intro__button {
+    display: block;
+    padding: 16px 35px 16px 72px;
+    margin: 0 auto;
+
+    font-size: 18px;
+  }
+
+  .intro__button-order {
+    width: 207px;
+
+    &::before {
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+      top: 14px;
+      left: 33px;
+    }
+  }
+
+  .intro__button-video {
+    width: 207px;
+    margin-top: 13px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-left: 86px;
+
+    &::before {
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+      top: 12px;
+      left: 46px;
+    }
+  }
+
+  .intro__social {
+    display: none;
+  }
+
+  .intro__text {
+    width: 100%;
+  }
+
+  .intro__link {
+    display: inline-block;
+  }
 }
