@@ -16,11 +16,7 @@ body {
   background-image: url("../img/body-background.png");
   background-repeat: no-repeat;
   background-size: 1366px 1366px;
-  background-position: 50% -20.5%;
-
-  @media (max-width: $tablet-width) {
-    background-size: 720px 720px;
-  }
+  background-position: 50% 20.5%;
 }
 
 img {

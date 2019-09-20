@@ -97,41 +97,41 @@
         <div class="product__slider">
           <p class="product__slider-content">Что показываем в планетарии</p>
           <ul class="product__slider-list">
+            <li class="product__slider-item product__slider-item--show">
+              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+            </li>
             <li class="product__slider-item">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item product__slider-item--hidden">
+            <li class="product__slider-item">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item product__slider-item--hidden">
+            <li class="product__slider-item">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item product__slider-item--hidden">
+            <li class="product__slider-item">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item product__slider-item--hidden">
-              <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-            </li>
-            <li class="product__slider-item product__slider-item--hidden">
+            <li class="product__slider-item">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
           </ul>
 
-          <div class="product__slider-container">
-            <p class="product__slider-number"><span class="product__slider-number--current">01 /</span> 06</p>
+          <div class="product__slider-container slider">
+            <p class="slider__number"><span class="product__slider-number--current">01 /</span> 06</p>
 
-            <div class="product__slider-buttons">
-              <button class="product__slider-button product__slider-button--back" type="button" disabled=""><span class="visually-hidden">Назад</span></button>
-              <button class="product__slider-button product__slider-button--next" type="button"><span class="visually-hidden">Вперед</span></button>
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--back" type="button"><span class="visually-hidden">Назад</span></button>
+              <button class="slider__button slider__button--next" type="button"><span class="visually-hidden">Вперед</span></button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="scroll">
-      <a class="scroll__link" href="explanation.html"><span class="visually-hidden">Скролл вниз</span></a>
-    </section>
+    <div class="scroll">
+      <a class="scroll__link" href="technology.html"><span class="visually-hidden">Скролл вниз</span></a>
+    </div>
 
     <section class="popup">
       <div class="popup__wrapper"></div>
@@ -172,5 +172,52 @@
       </li>
     </ul>
   </footer>
+
+  <script>
+  var previous = document.querySelector('.product__slider-button--back');
+  var next = document.querySelector('.product__slider-button--next');
+  var slides = document.querySelectorAll('.product__slider-item');
+  next.addEventListener("click", function()
+{
+
+	for(var i = 0; i < slides.length; i++)
+  {
+  	if (slides[i].classList.contains("product__slider-item--show"))
+    {
+    	slides[i].classList.remove("product__slider-item--show");
+      if (i < slides.length - 1)
+      {
+      	slides[i + 1].classList.add("product__slider-item--show");
+      }
+      else
+      {
+      	slides[0].classList.add("product__slider-item--show");
+      }
+      break;
+    }
+  }
+
+});
+
+previous.addEventListener("click", function()
+{
+	for(var i = 0; i < slides.length; i++)
+  {
+  	if (slides[i].classList.contains("product__slider-item--show"))
+    {
+    	slides[i].classList.remove("product__slider-item--show");
+      if (i < slides.length - 1)
+      {
+      	slides[i + 1].classList.add("product__slider-item--show");
+      }
+      else
+      {
+      	slides[0].classList.add("product__slider-item--show");
+      }
+      break;
+    }
+  }
+});
+  </script>
 </body>
 </html>

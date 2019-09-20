@@ -88,27 +88,53 @@
       <h1 class="explanation__title">Как это работает?</h1>
 
       <ol class="explanation__list">
-        <li class="explanation__item">
-          <h2 class="explanation__item-title">Готовим инвентарь</h2>
-          <p class="explanation__item-text">Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+        <li class="explanation__item explanation__item--active">
+          <div class="explanation__column-image explanation__column-image-inventory"></div>
+          <div class="explanation__column-text explanation__column-text-inventory">
+              <h2 class="explanation__item-title">Готовим инвентарь</h2>
+              <p class="explanation__item-text">Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+          </div>
         </li>
 
         <li class="explanation__item">
-          <h2 class="explanation__item-title">Выбираем фильм</h2>
-          <p class="explanation__item-text">В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.</p>
+          <div class="explanation__column-image explanation__column-image-choose"></div>
+          <div class="explanation__column-text">
+            <h2 class="explanation__item-title">Выбираем фильм</h2>
+            <p class="explanation__item-text">В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.</p>
+          </div>
+        </li>
+
+        <li class="explanation__item explanation__item-glasses">
+          <div class="explanation__column-image explanation__column-image-glasses"></div>
+          <div class="explanation__column-text">
+            <h2 class="explanation__item-title">Надеваем VR-очки</h2>
+            <p class="explanation__item-text">Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.</p>
+          </div>
         </li>
 
         <li class="explanation__item">
-          <h2 class="explanation__item-title">Надеваем VR-очки</h2>
-          <p class="explanation__item-text">Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.</p>
-        </li>
-
-        <li class="explanation__item">
-          <h2 class="explanation__item-title">Исследуем галактики!</h2>
-          <p class="explanation__item-text">Ребята окунаются в виртуальные миры и с удовольтсием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты о планетах, звёздах и галактике.</p>
+          <div class="explanation__column-image explanation__column-image-galaxies"></div>
+          <div class="explanation__column-text">
+            <h2 class="explanation__item-title">Исследуем галактики!</h2>
+            <p class="explanation__item-text">Ребята окунаются в виртуальные миры и с удовольтсием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты о планетах, звёздах и галактике.</p>
+          </div>
         </li>
       </ol>
+
+      <div class="explanation__slider-container slider">
+        <p class="slider__number"><span class="product__slider-number--current">01 /</span> 06</p>
+
+        <div class="slider__buttons">
+          <button class="slider__button slider__button--back" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="slider__button slider__button--next" type="button"><span class="visually-hidden">Вперед</span></button>
+        </div>
+      </div>
     </section>
+
+    <div class="scroll">
+      <a class="scroll__link" href="technology.html"><span class="visually-hidden">Скролл вниз</span></a>
+    </div>
+
     <section class="popup">
       <div class="popup__wrapper"></div>
       <form class="popup__form">
@@ -137,7 +163,16 @@
   </main>
 
   <footer class="page-footer">
-    <a href="#"><span class="visually-hidden">Скролл вниз</span></a>
+    <p class="page-footer__text">© Digital Planet, 2019</p>
+    <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
+    <ul class="page-footer__social">
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link page-footer__social-link--fb"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="#fb"></use></svg><span class="visually-hidden">facebook</span></a>
+      </li>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link page-footer__social-link--vk"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="#vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+      </li>
+    </ul>
   </footer>
 </body>
 </html>
