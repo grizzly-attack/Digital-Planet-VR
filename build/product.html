@@ -94,37 +94,42 @@
           <p class="product__text">За счёт реалестичности  и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.</p>
         </div>
 
+
         <div class="product__slider">
           <p class="product__slider-content">Что показываем в планетарии</p>
-          <ul class="product__slider-list">
-            <li class="product__slider-item product__slider-item--show">
+          <div class="swiper-container">
+            <ul class="product__slider-list swiper-wrapper">
+
+            <li class="product__slider-item swiper-slide">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item">
+            <li class="product__slider-item swiper-slide">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item">
+            <li class="product__slider-item swiper-slide">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item">
+            <li class="product__slider-item swiper-slide">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item">
+            <li class="product__slider-item swiper-slide">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
-            <li class="product__slider-item">
+            <li class="product__slider-item swiper-slide">
               <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
             </li>
           </ul>
 
           <div class="product__slider-container slider">
-            <p class="slider__number"><span class="product__slider-number--current">01 /</span> 06</p>
+            <p class="slider__pagination swiper-pagination"></p>
 
             <div class="slider__buttons">
-              <button class="slider__button slider__button--back" type="button"><span class="visually-hidden">Назад</span></button>
-              <button class="slider__button slider__button--next" type="button"><span class="visually-hidden">Вперед</span></button>
+              <button class="slider__button slider__button--back swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
+              <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
             </div>
           </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -173,51 +178,24 @@
     </ul>
   </footer>
 
-  <script>
-  var previous = document.querySelector('.product__slider-button--back');
-  var next = document.querySelector('.product__slider-button--next');
-  var slides = document.querySelectorAll('.product__slider-item');
-  next.addEventListener("click", function()
-{
+<script src="js/swiper.min.js"></script>
 
-	for(var i = 0; i < slides.length; i++)
-  {
-  	if (slides[i].classList.contains("product__slider-item--show"))
-    {
-    	slides[i].classList.remove("product__slider-item--show");
-      if (i < slides.length - 1)
-      {
-      	slides[i + 1].classList.add("product__slider-item--show");
-      }
-      else
-      {
-      	slides[0].classList.add("product__slider-item--show");
-      }
-      break;
-    }
-  }
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+      formatFractionCurrent: 	number => number<9?('0'+(number)):(number+1),
+      formatFractionTotal: number => number<9?('0'+(number)):(number)
+    },
 
-});
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-previous.addEventListener("click", function()
-{
-	for(var i = 0; i < slides.length; i++)
-  {
-  	if (slides[i].classList.contains("product__slider-item--show"))
-    {
-    	slides[i].classList.remove("product__slider-item--show");
-      if (i < slides.length - 1)
-      {
-      	slides[i + 1].classList.add("product__slider-item--show");
-      }
-      else
-      {
-      	slides[0].classList.add("product__slider-item--show");
-      }
-      break;
-    }
-  }
-});
-  </script>
+  });
+</script>
+
 </body>
 </html>
