@@ -85,34 +85,36 @@
 
   <main class="page-main">
     <section class="questions">
-      <h1 class="questions__title">Часто задаваемые вопросы</h1>
+      <div class="questions__main">
+        <h1 class="questions__title">Часто задаваемые вопросы</h1>
 
-      <ul class="questions__list">
-        <li class="questions__item">
-          <p class="questions__question">Сколько длится сеанс? Дети не устают во время просмотра?
-            <button class="button questions__button" type="button"><span class="visually-hidden">Показать ответ</span></button>
-          </p>
-          <p class="questions__answer"></p>
-        </li>
-        <li class="questions__item">
-          <p class="questions__question">Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?
-            <button class="button questions__button questions__button--close" type="button"><span class="visually-hidden">Показать ответ</span></button>
-          </p>
-          <p class="questions__answer questions__answer--open">VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.</p>
+        <ul class="questions__list">
+          <li class="questions__item">
+            <p class="questions__question">Сколько длится сеанс? Дети не устают во время просмотра?
+              <button class="button questions__button" type="button"><span class="visually-hidden">Показать ответ</span></button>
+            </p>
+            <p class="questions__answer"></p>
           </li>
-        <li class="questions__item">
-          <p class="questions__question">Дейсвтительно ли это образовательный метод, или это лишь игрушка?
-            <button class="button questions__button" type="button"><span class="visually-hidden">Показать ответ</span></button>
-          </p>
-          <p class="questions__answer"></p>
-        </li>
-        <li class="questions__item">
-          <p class="questions__question">Всё понятно! Хочу заказать выезд VR планетария, что нужно сделать?
-            <button class="button questions__button" type="button"><span class="visually-hidden">Показать ответ</span></button>
-          </p>
-          <p class="questions__answer"></p>
-        </li>
-      </ul>
+          <li class="questions__item questions__item--open">
+            <p class="questions__question">Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?
+              <button class="button questions__button" type="button"><span class="visually-hidden">Показать ответ</span></button>
+            </p>
+            <p class="questions__answer">VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.</p>
+            </li>
+          <li class="questions__item">
+            <p class="questions__question">Дейсвтительно ли это образовательный метод, или это лишь игрушка?
+              <button class="button questions__button" type="button"><span class="visually-hidden">Показать ответ</span></button>
+            </p>
+            <p class="questions__answer"></p>
+          </li>
+          <li class="questions__item">
+            <p class="questions__question">Всё понятно! Хочу заказать выезд VR планетария, что нужно сделать?
+              <button class="button questions__button" type="button"><span class="visually-hidden">Показать ответ</span></button>
+            </p>
+            <p class="questions__answer"></p>
+          </li>
+        </ul>
+      </div>
 
       <div class="scroll">
         <a class="scroll__link" href="questions.html"><span class="visually-hidden">Скролл вниз</span></a>
@@ -150,19 +152,23 @@
   </footer>
 
   <script>
-    var accordeon = document.querySelectorAll('.questions__button');
+      var item = document.getElementsByClassName('questions__item');
 
-    for (var i = 0; i < accordeon.length; i++) {
-    accordeon[i].addEventListener("click", function() {
-    theclicked=event.target;
-    theclicked.classList.toggle("questions__button--close");
-    var answers = document.querySelectorAll('.questions__answer'),
-    buttons = Array.prototype.slice.call( document.getElementsByClassName('questions__button') );
-    answers[( buttons.indexOf( theclicked.parentElement ) )].classList.toggle("questions__answer--open");
-    },false);
-    }
+      for (let i = 0; i < item.length; i++) {
+        item[i].addEventListener('click', function(el) {
+
+          el.currentTarget.classList.toggle('questions__item--open');
+
+          for (let i = 0; i < item.length; i++) {
+            if (item[i] !== el.currentTarget && item[i].className === "item questions__item--open") {
+              item[i].classList.remove('questions__item--open');
+            }
+          }
+        });
+      };
 
   </script>
+
   <script src="js/main.js" async></script>
 </body>
 </html>

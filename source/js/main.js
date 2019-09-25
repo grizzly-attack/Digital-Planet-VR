@@ -13,19 +13,6 @@
         }
       });
 
-      var accordeon = document.querySelectorAll('.questions__button');
-
-      for (var i = 0; i < accordeon.length; i++) {
-        accordeon[i].addEventListener("click", function() {
-        theclicked=event.target;
-        theclicked.classList.toggle("questions__button--close");
-        var answers = document.querySelectorAll('.questions__answer'),
-        buttons = Array.prototype.slice.call( document.getElementsByClassName('questions__button') );
-        answers[( buttons.indexOf( theclicked.parentElement ) )].classList.toggle("questions__answer--open");
-      },
-      false);
-    }
-
     var openButton = document.querySelector('.page-header__button');
     var openButtonIntro = document.querySelector('.intro__button-order');
     var popup = document.querySelector('.popup');
@@ -39,19 +26,19 @@
 
     var form = popup.querySelector('form');
 
-    openButtonIntro.addEventListener('click', function(evt) {
+      openButton.addEventListener('click', function(evt) {
       evt.preventDefault();
       popup.classList.add('popup__send');
       body.classList.add('popup-modal');
       userName.focus();
     });
 
-    openButton.addEventListener('click', function(evt) {
+    /*openButtonIntro.addEventListener('click', function(evt) {
       evt.preventDefault();
       popup.classList.add('popup__send');
       body.classList.add('popup-modal');
       userName.focus();
-    });
+    });*/
 
     close.addEventListener("click", function (evt) {
       evt.preventDefault();
