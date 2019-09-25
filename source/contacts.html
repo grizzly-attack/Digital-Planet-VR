@@ -35,13 +35,13 @@
 
   </svg>
 
-  <header class="page-header">
+  <header class="page-header page-header--close">
     <div class="page-header__wrapper">
       <p class="page-header__logo">
         <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="#DigitalPlaneT-logo"></use></svg></a>
       </p>
-      <button class="page-header__toggle page-header__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="page-header__navigation page-header__navigation--close">
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="page-header__navigation">
         <ul class="page-header__list">
           <li class="page-header__item page-header__item--intro">
             <a class="page-header__link" href="main.html">Главная</a>
@@ -85,44 +85,47 @@
 
   <main class="page-main">
     <section class="contacts">
-      <h1 class="contacts__title">Часто задаваемые вопросы</h1>
+      <h1 class="contacts__title">Контакты</h1>
 
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <p class="contacts__item-text contacts__item-city">Новороссийск</p>
-          <p class="contacts__item-text"><a class="contacts__item-link" href="tel:+79234650141">+7 (923) 465 – 01 – 41</a></p>
-          <p class="contacts__item-text"><a class="contacts__item-link" href="mailto:digitalPlanetNR@mail.ru">digitalPlanetNR@mail.ru</a></p>
-        </li>
-        <li>
-          <p class="contacts__item-text contacts__item-city">Москва</p>
-          <p class="contacts__item-text"><a class="contacts__item-link" href="tel:+74958552419">+7 (495) 855 – 24 – 19</a></p>
-          <p class="contacts__item-text"><a class="contacts__item-link" href="mailto:digitalPlanetMoscow@mail.ru">digitalPlanetMoscow@mail.ru</a></p>
-        </li>
-        <li>
-          <p class="contacts__item-text contacts__item-city">Саратов</p>
-          <p class="contacts__item-text"><a class="contacts__item-link" href="tel:+79422212178">+7 (942) 221 – 21 – 78</a></p>
-          <p class="contacts__item-text"><a class="contacts__item-link" href="mailto:digitalPlanetSaratov@mail.ru">digitalPlanetSaratov@mail.ru</a></p>
-        </li>
-      </ul>
+      <div class="contact__container">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__item-text contacts__item-city">Новороссийск</p>
+            <p class="contacts__item-text"><a class="contacts__item-link" href="tel:+79234650141">+7 (923) 465 – 01 – 41</a></p>
+            <p class="contacts__item-text"><a class="contacts__item-link" href="mailto:digitalPlanetNR@mail.ru">digitalPlanetNR@mail.ru</a></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-text contacts__item-city">Москва</p>
+            <p class="contacts__item-text"><a class="contacts__item-link" href="tel:+74958552419">+7 (495) 855 – 24 – 19</a></p>
+            <p class="contacts__item-text"><a class="contacts__item-link" href="mailto:digitalPlanetMoscow@mail.ru">digitalPlanetMoscow@mail.ru</a></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-text contacts__item-city">Саратов</p>
+            <p class="contacts__item-text"><a class="contacts__item-link" href="tel:+79422212178">+7 (942) 221 – 21 – 78</a></p>
+            <p class="contacts__item-text"><a class="contacts__item-link" href="mailto:digitalPlanetSaratov@mail.ru">digitalPlanetSaratov@mail.ru</a></p>
+          </li>
+        </ul>
 
-      <div>
-        <form class="contacts__form">
-          <p class="contacts__form-title">Остались вопросы? Задайте их нам!</p>
-          <p class="contacts__form-text">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
+        <div class="contact__column-right">
+          <form class="contacts__form">
+            <p class="contacts__form-title">Остались вопросы? Задайте их нам!</p>
+            <p class="contacts__form-text">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
 
-          <div class="contact__form-container">
-            <label for="name" class="visually-hidden">Ваше имя</label>
-            <input id="name" type="text" name="name" placeholder="Ваше имя" required>
+            <div class="contact__form-container">
+              <label for="name" class="visually-hidden">Ваше имя</label>
+              <input id="name" type="text" name="name" placeholder="Ваше имя" required>
 
-            <label for="mail" class="visually-hidden">Ваше e-mail</label>
-            <input id="mail" type="tel" name="mail" placeholder="Ваше e-mail" required>
+              <label for="mail" class="visually-hidden">Ваше e-mail</label>
+              <input id="mail" type="tel" name="mail" placeholder="Ваше e-mail" required>
 
-            <label for="question" class="visually-hidden">Что вас интересует?</label>
-            <textarea id="question" name="question" placeholder="Что вас интересует?" required></textarea>
-            <button class="button contacts__form-button" type="submit">Отправить</button>
-          </div>
-        </form>
+              <label for="question" class="visually-hidden">Что вас интересует?</label>
+              <textarea id="question" name="question" placeholder="Что вас интересует?" required></textarea>
+              <button class="button contacts__form-button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </div>
+
     </section>
 
     <section class="popup">
@@ -152,17 +155,18 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--contacts">
     <p class="page-footer__text">© Digital Planet, 2019</p>
-    <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
+    <p class="page-footer__text page-footer__text--center">Детский VR планетарий. Все права защищены.</p>
     <ul class="page-footer__social">
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link"><span class="visually-hidden">facebook</span></a>
+        <a class="page-footer__social-link page-footer__social-link--fb"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="#fb"></use></svg><span class="visually-hidden">facebook</span></a>
       </li>
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link"><span class="visually-hidden">вконтакте</span></a>
+        <a class="page-footer__social-link page-footer__social-link--vk"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="#vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
       </li>
     </ul>
   </footer>
+  <script src="js/main.js" async></script>
 </body>
 </html>

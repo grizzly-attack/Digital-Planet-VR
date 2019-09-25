@@ -1,9 +1,39 @@
+.contacts {
+  max-width: 1238px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding-left: 26px;
+  padding-right: 26px;
+
+  box-sizing: border-box;
+}
+
 .contacts__title {
   @include title;
+  margin-top: 72px;
+  margin-bottom: 46px;
+}
+
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__list {
   @include list-reset;
+
+  margin-left: 30px;
+  margin-right: 60px;
+  width: 240px;
+}
+
+.contact__column-right {
+  width: 570px;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
 }
 
 .contacts__item-text {
@@ -11,6 +41,8 @@
 }
 
 .contacts__item-city {
+  margin-bottom: 9px;
+
   font-weight: 700;
   font-size: 21px;
 }
@@ -27,6 +59,8 @@
 
 .contacts__form-title {
   margin: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 21px;
 }
@@ -36,20 +70,108 @@
   line-height: 1.3;
 }
 
-.contact__form-container input {
-  font-size: 13px;
-  font-weight: 400;
+.contact__form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  background-color: rgba(28, 28, 28, 0.4);
+.contact__form-container input {
+  display: inline-block;
+  width: 49%;
+  margin-top: 12px;
+
+  padding: 15px;
+  box-sizing: border-box;
+
+  border: none;
+
+  font-size: 15px;
+  font-weight: 400;
+  color: #1c1c1c;
 
   &::placeholder {
     font-size: 13px;
     font-weight: 400;
+  }
+}
 
-    background-color: rgba(28, 28, 28, 0.4);
+.contact__form-container textarea {
+  width: 100%;
+  margin-top: 10px;
+  min-height: 144px;
+
+  padding: 15px;
+  box-sizing: border-box;
+
+  border: none;
+  resize: none;
+
+  font-size: 15px;
+  font-weight: 400;
+  color: #1c1c1c;
+
+  &::placeholder {
+    font-size: 13px;
+    font-weight: 400;
   }
 }
 
 .contacts__form-button {
   display: block;
+
+  margin-top: 20px;
+}
+
+@media (max-width: $desktop-width) {
+  .contact__column-right {
+    width: 56%;
+  }
+
+  .contacts__list {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    @include padding;
+  }
+
+  .contacts__list {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts__title {
+    margin-top: 63px;
+    margin-bottom: 30px;
+    padding-bottom: 6px;
+  }
+
+  .contact__column-right {
+    width: 100%;
+  }
+
+  .contact__form-container {
+    margin-right: 9px;
+  }
+
+  .contact__form-container input {
+    width: 100%;
+  }
+
+  .contact__form-container textarea {
+    min-height: 164px;
+  }
+
+  .contacts__item {
+    margin-bottom: 28px;
+  }
+
+  .contacts__form-title {
+    margin-bottom: 7px;
+    line-height: 1.3;
+  }
 }
