@@ -2,8 +2,7 @@
 
       var navToggle = document.querySelector('.page-header__toggle');
       var header = document.querySelector('.page-header');
-      /*navMain.classList.remove('main-nav--js-locked');
-      headerContainer.classList.remove('page-header--js-locked');*/
+      header.classList.remove('page-header--nojs');
       navToggle.addEventListener('click', function() {
         if (header.classList.contains('page-header--close')) {
           header.classList.remove('page-header--close');
@@ -14,67 +13,79 @@
         }
       });
 
+      var accordeon = document.querySelectorAll('.questions__button');
 
-  /*var toggle = document.querySelector('.page-footer__toggle');
-  var footerBlock = document.querySelector('.page-footer__block');
-  var body = document.querySelector('body');
-
-  var openButton = document.querySelector('.page-header__button');
-  var popup = document.querySelector('.popup');
-  var close = popup.querySelector('.popup__close-button');
-  var overlay = popup.querySelector('.popup__wrapper');
-
-  var form = popup.querySelector('.popup__form');
-  var userName = popup.querySelector('[name="user-name"]');
-  var phone = popup.querySelector('[name="user-phone"]');
-  var question = popup.querySelector('[name="user-question"]');
-
-  toggle.classList.remove('page-footer__toggle--js-locked');
-  footerBlock.classList.remove('page-footer__block--js-locked');
-  toggle.addEventListener('click', function() {
-    if (toggle.classList.contains('page-footer__toggle--closed')) {
-      toggle.classList.remove('page-footer__toggle--closed');
-      toggle.classList.add('page-footer__toggle--opened');
-      footerBlock.classList.remove('page-footer__block--hidden');
+      for (var i = 0; i < accordeon.length; i++) {
+        accordeon[i].addEventListener("click", function() {
+        theclicked=event.target;
+        theclicked.classList.toggle("questions__button--close");
+        var answers = document.querySelectorAll('.questions__answer'),
+        buttons = Array.prototype.slice.call( document.getElementsByClassName('questions__button') );
+        answers[( buttons.indexOf( theclicked.parentElement ) )].classList.toggle("questions__answer--open");
+      },
+      false);
     }
-    else {
-      toggle.classList.add('page-footer__toggle--closed');
-      toggle.classList.remove('page-footer__toggle--opened');
-      footerBlock.classList.add('page-footer__block--hidden');
-    }
-  });
 
-  openButton.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    popup.classList.add('popup--show');
-    body.classList.add('popup-modal');
-    userName.focus();
-  });
+    var openButton = document.querySelector('.page-header__button');
+    var openButtonIntro = document.querySelector('.intro__button-order');
+    var popup = document.querySelector('.popup');
+    var close = popup.querySelector('.popup__close-button');
+    var overlay = popup.querySelector('.popup__wrapper');
 
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("popup--show");
-    body.classList.remove('popup-modal');
-  });
+    var userName = popup.querySelector('[name="user-name"]');
+    var phone = popup.querySelector('[name="user-phone"]');
 
-  form.addEventListener("submit", function () {
-    localStorage.setItem("name", name.value);
-    localStorage.setItem("phone", phone.value);
-    localStorage.setItem("question", question.value);
-  });
+    var body = document.querySelector('body');
 
-  window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("popup--show")) {
-      popup.classList.remove("popup--show");
-      body.classList.remove("popup-modal");
-      }
-    };
-  });
+    var form = popup.querySelector('form');
 
-  overlay.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("popup--show");
-    body.classList.remove('popup-modal');
-  })*/
+    openButtonIntro.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      popup.classList.add('popup__send');
+      body.classList.add('popup-modal');
+      userName.focus();
+    });
+
+    openButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      popup.classList.add('popup__send');
+      body.classList.add('popup-modal');
+      userName.focus();
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("popup__send");
+      body.classList.remove('popup-modal');
+    });
+
+    form.addEventListener("submit", function () {
+      localStorage.setItem("name", name.value);
+      localStorage.setItem("phone", phone.value);
+    });
+
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("popup__send")) {
+        popup.classList.remove("popup__send");
+        body.classList.remove("popup-modal");
+        }
+      };
+    });
+
+    overlay.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("popup__send");
+      body.classList.remove('popup-modal');
+    })
+
+    var openButtonContacts = document.querySelector('.contacts__form-button');
+
+    openButtonContacts.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      popup.classList.add('popup__message');
+      body.classList.add('popup-modal');
+    });
+
+

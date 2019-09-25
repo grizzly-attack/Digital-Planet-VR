@@ -121,7 +121,7 @@
 
     <section class="popup">
       <div class="popup__wrapper"></div>
-      <form class="popup__form">
+      <form>
         <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
         <h2 class="popup__title">Закажите VR планетарий</h2>
         <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
@@ -131,18 +131,8 @@
         <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
         <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?" required>
 
-        <button class="popup__send-button" type="submit">Отправить</button>
+        <button class="button popup__send-button" type="submit">Отправить</button>
       </form>
-    </section>
-
-    <section class="popup popup__message">
-      <div class="popup__wrapper"></div>
-      <div class="popup__message">
-        <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-        <p class="popup__title">Сообщение успешно отправлено!</p>
-        <p class="popup__text">Мы обязательно свяжемся с вами в ближайшее время и подробно ответим на ваш вопрос, будьте на связи!</p>
-        <button class="popup__button" type="button">ОК</button>
-      </div>
     </section>
   </main>
 
@@ -160,17 +150,17 @@
   </footer>
 
   <script>
-    var acc = document.querySelectorAll('.questions__button');
+    var accordeon = document.querySelectorAll('.questions__button');
 
-    for (var i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("questions__button--close");
-
-        var block = document.querySelector('.questions__answer');
-        console.log(block);
-        block.classList.toggle("questions__answer--open")
-  });
-}
+    for (var i = 0; i < accordeon.length; i++) {
+    accordeon[i].addEventListener("click", function() {
+    theclicked=event.target;
+    theclicked.classList.toggle("questions__button--close");
+    var answers = document.querySelectorAll('.questions__answer'),
+    buttons = Array.prototype.slice.call( document.getElementsByClassName('questions__button') );
+    answers[( buttons.indexOf( theclicked.parentElement ) )].classList.toggle("questions__answer--open");
+    },false);
+    }
 
   </script>
   <script src="js/main.js" async></script>
