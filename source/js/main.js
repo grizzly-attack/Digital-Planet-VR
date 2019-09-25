@@ -33,14 +33,7 @@
       userName.focus();
     });
 
-    /*openButtonIntro.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      popup.classList.add('popup__send');
-      body.classList.add('popup-modal');
-      userName.focus();
-    });*/
-
-    close.addEventListener("click", function (evt) {
+      close.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.remove("popup__send");
       body.classList.remove('popup-modal');
@@ -67,6 +60,13 @@
       popup.classList.remove("popup__message");
       body.classList.remove('popup-modal');
     })
+
+    openButtonIntro.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      popup.classList.add('popup__send');
+      body.classList.add('popup-modal');
+      userName.focus();
+    });
 
     var openButtonContacts = document.querySelector('.contacts__form-button');
 

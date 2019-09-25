@@ -94,9 +94,52 @@
     font-size: 13px;
     font-weight: 400;
   }
+
+  &:focus {
+    border: 2px solid $green;
+  }
+
+  &:valid {
+    border: 2px solid #1dc04b;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      background-image: url("../img/correct.svg");
+      background-repeat: no-repeat;
+      background-size: 16px 13px;
+      background-position: 0 0;
+
+      width: 16px;
+      height: 13px;
+      top: 17px;
+      right: 17px;
+    }
+  }
+
+  &:invalid {
+    border: 2px solid #f97676;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      background-image: url("../img/incorrect.svg");
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+      background-position: 0 0;
+
+      width: 12px;
+      height: 12px;
+      top: 18px;
+      right: 17px;
+    }
+  }
 }
 
 .contact__form-container textarea {
+  position: relative;
   width: 100%;
   margin-top: 10px;
   min-height: 144px;
@@ -114,6 +157,10 @@
   &::placeholder {
     font-size: 13px;
     font-weight: 400;
+  }
+
+  &:focus {
+    border: 2px solid $green;
   }
 }
 
