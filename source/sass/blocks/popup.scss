@@ -48,15 +48,6 @@
   min-height: 338px;
 }
 
-.popup__message {
-  display: block;
-  background-color: #f3f3f3;
-}
-
-.popup__send {
-  display: block;
-}
-
 .popup__text {
   margin: 0;
   margin-bottom: 11px;
@@ -143,40 +134,18 @@
 
   &:valid {
     border: 2px solid #1dc04b;
-
-    &::before {
-      content: "";
-      position: absolute;
-
-      background-image: url("../img/correct.svg");
-      background-repeat: no-repeat;
-      background-size: 16px 13px;
-      background-position: 0 0;
-
-      width: 16px;
-      height: 13px;
-      top: 17px;
-      right: 17px;
-    }
+    background-image: url("../img/correct.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 13px;
+    background-position: right top;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border: 2px solid #f97676;
-
-    &::before {
-      content: "";
-      position: absolute;
-
-      background-image: url("../img/incorrect.svg");
-      background-repeat: no-repeat;
-      background-size: 12px 12px;
-      background-position: 0 0;
-
-      width: 12px;
-      height: 12px;
-      top: 18px;
-      right: 17px;
-    }
+    background-image: url("../img/incorrect.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: right top;
   }
 }
 
@@ -190,7 +159,6 @@
 
 .popup__form-message {
   padding-top: 140px;
-  position: relative;
 
   &::before {
     content: "";

@@ -98,7 +98,7 @@
       </p>
 
       <ul class="technology__list">
-        <li class="technology__item technology__item-1">
+        <li class="technology__item technology__item-1 technology__item--active">
           <p class="technology__item-image-container technology__item-image-container-1">
             <img class="technology__item-image technology__item-image-1" src="img/VR-glasses.png" width="428" height="220" alt="VR-очки">
           </p>
@@ -119,7 +119,7 @@
           <h2 class="technology__item-title">Оборудование</h2>
           <p class="technology__item-text">Все фильмы воспроизводятся при помощи встроенных в очки экранов мобильных телефонов ведущих брендов. Наши техники привезут всё обордуование с собой: от вас нужно лишь помещение для урока.</p>
         </li>
-        <li class="technology__item technology__item-4 technology__item--active">
+        <li class="technology__item technology__item-4">
           <p class="technology__item-image-container technology__item-image-container-4">
             <img class="technology__item-image technology__item-image-4" src="img/VR-glasses.png" width="428" height="220" alt="VR-очки">
           </p>
@@ -143,10 +143,10 @@
       <a class="scroll__link" href="questions.html"><span class="visually-hidden">Скролл вниз</span></a>
     </div>
 
-    <section class="popup">
+    <section class="popup popup__send">
       <div class="popup__wrapper"></div>
       <form>
-        <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
         <h2 class="popup__title">Закажите VR планетарий</h2>
         <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
         <label for="popup-name" class="visually-hidden">Ваше имя</label>
@@ -178,6 +178,83 @@
   <script>
     $("#popup-phone").mask("+7(999) 999-99-99");
   </script>
+
+  <script>
+  var nextBtn = document.querySelector(".slider__button--next");
+  var slides = document.querySelectorAll(".technology__item");
+  var prevBtn = document.querySelector(".slider__button--back");
+  var i=0;
+  /*nextBtn.addEventListener("click", function()
+  {
+
+    for(var i = 0; i < slides.length; i++)
+    {
+      if (slides[i].classList.contains("technology__item--active"))
+      {
+        slides[i].classList.remove("technology__item--active");
+        if (i < slides.length - 1)
+        {
+          slides[i + 1].classList.add("technology__item--active");
+        }
+        else
+        {
+          slides[0].classList.add("technology__item--active");
+        }
+        break;
+      }
+    }
+});
+
+prevBtn.addEventListener("click", function()
+  {
+
+    for(var i = 0; i < slides.length; i++)
+    {
+      if (slides[i].classList.contains("technology__item--active"))
+      {
+        slides[i].classList.remove("technology__item--active");
+        if (i < slides.length - 1)
+        {
+          slides[i + 1].classList.add("technology__item--active");
+        }
+        else
+        {
+          slides[0].classList.add("technology__item--active");
+        }
+        break;
+      }
+    }
+});*/
+
+/*Клик по кнопке назад*/
+bat_back.onclick=function()
+{
+ div_fotos[i].className=''; // Удаляем
+ class i--;
+
+ if (i<0){
+ {
+ i=div_fotos.length-1;
+ }
+
+ div_fotos[i].className='active'; // Добавляем class active
+}
+
+/*Клик по кнопке вперед*/
+bat_next.onclick=function()
+{
+ div_fotos[i].className=''; // Удаляем class
+ i++;
+
+ if (i>=div_fotos.length)
+ {
+ i=0;
+ }
+
+ div_fotos[i].className='active'; // Добавляем class active
+}
+
+</script>
   <script src="js/main.js" async></script>
 </body>
 </html>

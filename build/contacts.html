@@ -128,10 +128,10 @@
 
     </section>
 
-    <section class="popup">
+    <section class="popup popup__send">
       <div class="popup__wrapper"></div>
       <form>
-        <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
         <h2 class="popup__title">Закажите VR планетарий</h2>
         <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
         <label for="popup-name" class="visually-hidden">Ваше имя</label>
@@ -144,10 +144,10 @@
       </form>
     </section>
 
-    <section class="popup">
+    <section class="popup popup__message">
       <div class="popup__wrapper"></div>
       <div class="popup__form popup__form-message">
-        <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="popup__close-button popup__close-button--send" type="button"><span class="visually-hidden">Закрыть</span></button>
         <p class="popup__title">Сообщение успешно отправлено!</p>
         <p class="popup__text">Мы обязательно свяжемся с вами в ближайшее время и подробно ответим на ваш вопрос, будьте на связи!</p>
         <button class="button popup__button" type="button">ОК</button>
@@ -174,6 +174,7 @@
   <script>
     $("#popup-phone").mask("+7(999) 999-99-99");
   </script>
+
   <script src="js/main.js" async=""></script>
 </body>
 </html>
