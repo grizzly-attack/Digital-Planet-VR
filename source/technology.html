@@ -8,10 +8,15 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
    <header class="page-header page-header--close">
     <div class="page-header__wrapper">
       <p class="page-header__logo">
-        <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#DigitalPlaneT-logo"></use></svg></a>
+        <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#icon-Logo-Digital-Planet"></use></svg></a>
       </p>
       <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="page-header__navigation">
@@ -47,10 +52,10 @@
       <p class="page-header__tel"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
       <ul class="page-header__social">
         <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--fb"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#fb"></use></svg><span class="visually-hidden">facebook</span></a>
+          <a class="page-header__social-link page-header__social-link--fb"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
         </li>
         <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--vk"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+          <a class="page-header__social-link page-header__social-link--vk"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
         </li>
       </ul>
     </div>
@@ -63,7 +68,7 @@
 
       <p class="technology__image-container">
         <img class="technology__image" src="img/VR-glasses.png" width="428" height="220" alt="VR-очки">
-        <button class="button technology__button" type="button"><svg class="technology__button-image" width="40" height="40"><use xlink:href="img/sprite.svg#magnifier"></use></svg><span class="visually-hidden">Увеличить</span></button>
+        <button class="button technology__button" type="button"><svg class="technology__button-image" width="40" height="40"><use xlink:href="img/sprite.svg#icon-magnifier"></use></svg><span class="visually-hidden">Увеличить</span></button>
       </p>
 
       <ul class="technology__list">
@@ -134,70 +139,14 @@
     <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
     <ul class="page-footer__social">
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--fb"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#fb"></use></svg><span class="visually-hidden">facebook</span></a>
+        <a class="page-footer__social-link page-footer__social-link--fb"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
       </li>
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--vk"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+        <a class="page-footer__social-link page-footer__social-link--vk"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
       </li>
     </ul>
   </footer>
 
-
-  <script>
-    var element = document.getElementById('popup-phone');
-    var maskOptions = {
-      mask: '+{7}(000)000-00-00'
-    };
-    var mask = IMask(element, maskOptions);
-  </script>
-
-  <script>
-  var nextBtn = document.querySelector(".slider__button--next");
-  var slides = document.querySelectorAll(".technology__item");
-  var prevBtn = document.querySelector(".slider__button--back");
-  nextBtn.addEventListener("click", function()
-  {
-
-    for(var i = 0; i < slides.length; i++)
-    {
-      if (slides[i].classList.contains("technology__item--active"))
-      {
-        slides[i].classList.remove("technology__item--active");
-        if (i < slides.length - 1)
-        {
-          slides[i + 1].classList.add("technology__item--active");
-        }
-        else
-        {
-          slides[0].classList.add("technology__item--active");
-        }
-        break;
-      }
-    }
-});
-
-prevBtn.addEventListener("click", function()
-  {
-
-    for(var i = 0; i < slides.length; i++)
-    {
-      if (slides[i].classList.contains("technology__item--active"))
-      {
-        slides[i].classList.remove("technology__item--active");
-        if (i < slides.length - 1)
-        {
-          slides[i + 1].classList.add("technology__item--active");
-        }
-        else
-        {
-          slides[0].classList.add("technology__item--active");
-        }
-        break;
-      }
-    }
-});
-
-</script>
-  <script src="js/main.js" async></script>
+  <script src="js/main.min.js" async></script>
 </body>
 </html>

@@ -15,8 +15,8 @@ body {
   background-color: #02050c;
   background-image: url("../img/body-background.png");
   background-repeat: no-repeat;
-  background-size: 1366px 1366px;
-  background-position: 50% -307px;
+  background-size: 100% auto;
+  background-position: 50% 0;
 }
 
 img {
@@ -80,6 +80,6 @@ img {
 .main-background {
   background-image: url("../img/body-background-main-2.png"), url("../img/body-background-main.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 1366px auto, 1366px auto;
+  background-size: 100% auto, 100% auto;
   background-position: 50% 0, 50% 0;
 }

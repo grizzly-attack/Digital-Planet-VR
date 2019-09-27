@@ -102,42 +102,18 @@
 
   &:valid {
     border: 2px solid #1dc04b;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-
-      background-image: url("../img/correct.svg");
-      background-repeat: no-repeat;
-      background-size: 16px 13px;
-      background-position: 0 0;
-
-      width: 16px;
-      height: 13px;
-      top: 17px;
-      right: 17px;
-    }
+    background-image: url("../img/correct.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 13px;
+    background-position: top 17px right 17px;
   }
 
   &:focus:invalid {
     border: 2px solid #f97676;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-
-      background-image: url("../img/incorrect.svg");
-      background-repeat: no-repeat;
-      background-size: 12px 12px;
-      background-position: 0 0;
-
-      width: 12px;
-      height: 12px;
-      top: 18px;
-      right: 17px;
-    }
+    background-image: url("../img/incorrect.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: top 18px right 17px;
   }
 }
 

@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--close">
     <div class="page-header__wrapper">
       <p class="page-header__logo">
-        <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#DigitalPlaneT-logo"></use></svg></a>
+        <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#icon-Logo-Digital-Planet"></use></svg></a>
       </p>
       <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="page-header__navigation">
@@ -47,10 +50,10 @@
       <p class="page-header__tel"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
       <ul class="page-header__social">
         <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--fb"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#fb"></use></svg><span class="visually-hidden">facebook</span></a>
+          <a class="page-header__social-link page-header__social-link--fb"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
         </li>
         <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--vk"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+          <a class="page-header__social-link page-header__social-link--vk"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
         </li>
       </ul>
     </div>
@@ -133,39 +136,14 @@
     <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
     <ul class="page-footer__social">
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--fb"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#fb"></use></svg><span class="visually-hidden">facebook</span></a>
+        <a class="page-footer__social-link page-footer__social-link--fb"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
       </li>
       <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--vk"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+        <a class="page-footer__social-link page-footer__social-link--vk"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
       </li>
     </ul>
   </footer>
 
-
-  <script src="js/swiper.min.js"></script>
-  <script>
-    var swiper = new Swiper('.explanation__container', {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-        formatFractionCurrent: 	number => number<9?('0'+(number)):(number+1),
-        formatFractionTotal: number => number<9?('0'+(number)):(number)
-      },
-
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
-
-  <script>
-    $("#popup-phone").mask("+7(999) 999-99-99");
-  </script>
-
-  <script src="js/main.js" async></script>
+  <script src="js/main.min.js" async></script>
 </body>
 </html>
