@@ -83,16 +83,30 @@
 }
 
 .product__slider-item {
+  position: relative;
   line-height: 0;
 }
 
+.product__slider-item--lock {
+  display: none;
+}
+
+.product__slider-item--active {
+  display: block;
+}
 
 .product__slider-container {
   display: flex;
   align-items: center;
 
-  width: 198px;
+  width: 120px;
   margin-left: auto;
+}
+
+.product__slider-number {
+  position: absolute;
+  bottom: -24px;
+  right: 120px;
 }
 
 @media (max-width: $desktop-width) {

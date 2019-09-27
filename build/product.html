@@ -94,36 +94,39 @@
 
         <div class="product__slider">
           <p class="product__slider-content">Что показываем в планетарии</p>
-          <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-            <ul class="product__slider-list swiper-wrapper">
+          <div>
+            <ul class="product__slider-list">
 
-              <li class="product__slider-item swiper-slide">
+              <li class="product__slider-item product__slider-item--active">
                 <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">01 /</span> 06</p>
               </li>
-              <li class="product__slider-item swiper-slide">
+              <li class="product__slider-item product__slider-item--lock">
                 <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">02 /</span> 06</p>
               </li>
-              <li class="product__slider-item swiper-slide">
+              <li class="product__slider-item product__slider-item--lock">
                 <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">03 /</span> 06</p>
               </li>
-              <li class="product__slider-item swiper-slide">
+              <li class="product__slider-item product__slider-item--lock">
                 <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">04 /</span> 06</p>
               </li>
-              <li class="product__slider-item swiper-slide">
+              <li class="product__slider-item product__slider-item--lock">
                 <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">05 /</span> 06</p>
               </li>
-              <li class="product__slider-item swiper-slide">
+              <li class="product__slider-item product__slider-item--lock">
                 <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">06 /</span> 06</p>
               </li>
             </ul>
 
             <div class="product__slider-container slider">
-              <p class="slider__pagination swiper-pagination"></p>
-
               <div class="slider__buttons">
-                <button class="slider__button slider__button--back swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
-                <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                <button class="slider__button slider__button--back product__slider-button--back" type="button"><span class="visually-hidden">Назад</span></button>
+                <button class="slider__button slider__button--next product__slider-button--next" type="button"><span class="visually-hidden">Вперед</span></button>
               </div>
             </div>
           </div>
@@ -165,7 +168,6 @@
       </li>
     </ul>
   </footer>
-
 <script src="js/main.min.js" async=""></script>
 
 </body>

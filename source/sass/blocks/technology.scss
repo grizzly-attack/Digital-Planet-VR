@@ -194,6 +194,10 @@
   display: none;
 }
 
+.technology__slider-number {
+  display: none;
+}
+
 @media (max-width: $desktop-width) {
   .technology {
     @include padding;
@@ -206,13 +210,16 @@
   }
 
   .technology__item {
-    display: none;
     width: 100%;
     padding-right: 0;
 
     &:nth-child(2n) {
       padding: 0;
     }
+  }
+
+  .technology__item--lock {
+    display: none;
   }
 
   .technology__item--active {
@@ -271,7 +278,7 @@
   }
 
   .technology__item-4 {
-    margin-top: 0;
+    margin-top: 34px;
   }
 
   .technology__item-text {
@@ -288,7 +295,7 @@
     display: flex;
     align-items: center;
 
-    width: 198px;
+    width: 120px;
     margin-left: auto;
   }
 
@@ -338,6 +345,13 @@
       top: 195px;
       left: 362px;
     }
+  }
+
+  .technology__slider-number {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: 120px;
   }
 }
 

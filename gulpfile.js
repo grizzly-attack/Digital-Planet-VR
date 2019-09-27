@@ -33,7 +33,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src(["source/js/vendor/*.js", "source/js/modules/accordion.js", "source/js/modules/header.js", "source/js/modules/mask.js", "source/js/modules/init-swiper.js", "source/js/modules/popup.js", "source/js/modules/popup-send.js"])
+  return gulp.src(["source/js/vendor/*.js", "source/js/modules/accordion.js", "source/js/modules/header.js", "source/js/modules/mask.js", "source/js/modules/product-slider.js", "source/js/modules/product-slider.js", "source/js/modules/explanation-slider.js", "source/js/modules/technology-slider.js", "source/js/modules/popup.js", "source/js/modules/popup-send.js"])
     .pipe(plumber())
     .pipe(concat("main.js"))
     .pipe(terser())
