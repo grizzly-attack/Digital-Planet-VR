@@ -198,6 +198,10 @@
   display: none;
 }
 
+.technology__list .slider__item--locked {
+  display: block;
+}
+
 @media (max-width: $desktop-width) {
   .technology {
     @include padding;
@@ -218,7 +222,7 @@
     }
   }
 
-  .technology__item--lock {
+  .technology__list .slider__item--locked {
     display: none;
   }
 

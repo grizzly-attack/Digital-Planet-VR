@@ -220,6 +220,14 @@
   display: none;
 }
 
+.explanation__list .slider__item--locked {
+  display: flex;
+}
+
+.explanation__list .slider__item--active {
+  display: flex;
+}
+
 @media (max-width: $desktop-width) {
   .explanation__item {
     flex-wrap: wrap;
@@ -299,7 +307,7 @@
     }
   }
 
-  .explanation__item--lock {
+  .explanation__list .slider__item--locked {
     display: none;
   }
 
