@@ -30,8 +30,8 @@
 }
 
 .product__slider {
-  width: 100%;
-  max-width: 562px;
+  width: 40%;
+  min-width: 420px;
 
   margin-top: 147px;
 
@@ -82,9 +82,21 @@
   @include list-reset;
 }
 
-.product__slider-item {
+.product__slide {
   position: relative;
   line-height: 0;
+}
+
+.product__slide-wrapper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.product__slide-image {
+  height: 100%;
+  width: auto;
+  max-width: none;
 }
 
 .product__slider-container {

@@ -3,6 +3,11 @@
     var openButton = document.querySelector('.page-header__button');
 
     var popupSend = document.querySelector('.popup__send');
+
+    if (!popupSend) {
+      return;
+    }
+
     var close = popupSend.querySelector('.popup__close-button--order');
     var sendOverlay = popupSend.querySelector('.popup__wrapper');
 
