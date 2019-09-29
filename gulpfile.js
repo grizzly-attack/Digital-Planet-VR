@@ -16,7 +16,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
 var terser = require('gulp-terser');
 
 gulp.task("css", function () {
@@ -33,7 +32,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src(["source/js/vendor/*.js", "source/js/modules/accordion.js", "source/js/modules/header.js", "source/js/modules/mask.js", "source/js/modules/slider.js", "source/js/modules/popup.js", "source/js/modules/popup-send.js"])
+  return gulp.src(["source/js/vendor/*.js", "source/js/modules/accordion.js", "source/js/modules/header.js", "source/js/modules/mask.js", "source/js/modules/init-swiper.js", "source/js/modules/popup.js", "source/js/modules/popup-send.js"])
     .pipe(plumber())
     .pipe(concat("main.js"))
     .pipe(terser())
