@@ -94,45 +94,54 @@
 
         <div class="product__slider">
           <p class="product__slider-content">Что показываем в планетарии</p>
-          <div>
-            <ul class="product__slider-list">
-              <li class="product__slider-item slider__item slider__item--active">
-                <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">01 /</span> 06</p>
-              </li>
-              <li class="product__slider-item slider__item slider__item--locked">
-                <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">02 /</span> 06</p>
-              </li>
-              <li class="product__slider-item slider__item slider__item--locked">
-                <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">03 /</span> 06</p>
-              </li>
-              <li class="product__slider-item slider__item slider__item--locked">
-                <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">04 /</span> 06</p>
-              </li>
-              <li class="product__slider-item slider__item slider__item--locked">
-                <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">05 /</span> 06</p>
-              </li>
-              <li class="product__slider-item slider__item slider__item--locked">
-                <img class="product__slider-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                <p class="product__slider-number slider__number"><span class="technology__slider-number--current">06 /</span> 06</p>
-              </li>
-            </ul>
+          <div class="swiper-container">
+            <ul class="product__slider-list swiper-wrapper">
 
-            <div class="product__slider-container slider">
-              <div class="slider__buttons">
-                <button class="product__slider-button slider__button slider__button--back" type="button"><span class="visually-hidden">Назад</span></button>
-                <button class="product__slider-button slider__button slider__button--next" type="button"><span class="visually-hidden">Вперед</span></button>
+            <li class="product__slide swiper-slide">
+              <div class="product__slide-wrapper">
+                <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
               </div>
+            </li>
+            <li class="product__slide swiper-slide">
+              <div class="product__slide-wrapper">
+                <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+              </div>
+            </li>
+            <li class="product__slide swiper-slide">
+              <div class="product__slide-wrapper">
+                <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+              </div>
+            </li>
+            <li class="product__slide swiper-slide">
+              <div class="product__slide-wrapper">
+                <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+              </div>
+            </li>
+            <li class="product__slide swiper-slide">
+              <div class="product__slide-wrapper">
+                <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+              </div>
+            </li>
+            <li class="product__slide swiper-slide">
+              <div class="product__slide-wrapper">
+                <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+              </div>
+            </li>
+          </ul>
+
+          <div class="product__slider-container slider">
+            <p class="slider__pagination swiper-pagination"></p>
+
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--back swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
+              <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
+    </div></section>
 
     <div class="scroll">
       <a class="scroll__link" href="explanation.html"><span class="visually-hidden">Скролл вниз</span></a>
@@ -148,7 +157,7 @@
         <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required="">
 
         <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-        <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?" required="">
+        <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" required="">
 
         <button class="button popup__send-button" type="submit">Отправить</button>
       </form>

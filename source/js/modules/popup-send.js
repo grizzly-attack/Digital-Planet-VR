@@ -7,6 +7,14 @@
       var body = document.querySelector('body');
       var closeButton = document.querySelector('.popup__close-button--send');
 
+      if (!sendButton) {
+        return;
+      }
+
+      if (!closeButton) {
+        return;
+      }
+
       sendButton.addEventListener('click', function() {
       popupMessage.classList.add('popup--show');
       body.classList.add('popup-modal');
@@ -28,5 +36,5 @@
         evt.preventDefault();
         popupSend.classList.remove("popup--show");
         body.classList.remove('popup-modal');
-     });
+      });
 }) ();

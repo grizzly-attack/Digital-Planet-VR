@@ -1,8 +1,8 @@
-@import "scaffolding.scss";
-@import "normalize.scss";
-@import "swiper.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "scaffolding.scss";
+@import "vendor/normalize.scss";
+@import "vendor/swiper.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/intro.scss";

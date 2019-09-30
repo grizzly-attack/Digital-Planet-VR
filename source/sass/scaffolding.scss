@@ -15,7 +15,7 @@ body {
   background-color: #02050c;
   background-image: url("../img/body-background.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: 50% 40%;
 }
 
@@ -72,14 +72,24 @@ img {
   overflow: hidden;
 }
 
-.wrapper {
-  max-width: 1278px;
-  margin: 0 auto;
+.main-background {
+  background-color: #02050c;
+  background-image: none;
 }
 
-.main-background {
-  background-image: url("../img/body-background-main-2.png"), url("../img/body-background-main.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100% auto, 100% auto;
-  background-position: 50% 0, 50% 0;
+.main-background__wrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/kid_VR.png"), url("../img/body-background-main-2.png"), url("../img/body-background-main.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 430px 350px, cover, cover;
+  background-position: 100% 100%, 50% 0, 50% 0;
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/body-background-main-2.png"), url("../img/body-background-main.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: 50% 0, 50% 0;
+  }
 }

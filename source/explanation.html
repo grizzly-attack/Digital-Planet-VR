@@ -62,48 +62,51 @@
   <main class="page-main">
     <section class="explanation">
       <h1 class="explanation__title">Как это работает?</h1>
+      <div class="swiper-container js-slider-mobile">
+        <ol class="explanation__list swiper-wrapper">
+          <li class="explanation__item explanation__item--active swiper-slide">
+            <div class="explanation__column-image explanation__column-image-inventory"></div>
+            <div class="explanation__column-text explanation__column-text-inventory">
+              <h2 class="explanation__item-title">Готовим инвентарь</h2>
+              <p class="explanation__item-text">Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+            </div>
+          </li>
 
-      <ol class="explanation__list">
-        <li class="explanation__item explanation__item--active">
-          <div class="explanation__column-image explanation__column-image-inventory"></div>
-          <div class="explanation__column-text explanation__column-text-inventory">
-            <h2 class="explanation__item-title">Готовим инвентарь</h2>
-            <p class="explanation__item-text">Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+          <li class="explanation__item explanation__item-choose swiper-slide">
+            <div class="explanation__column-image explanation__column-image-choose"></div>
+            <div class="explanation__column-text">
+              <h2 class="explanation__item-title">Выбираем фильм</h2>
+              <p class="explanation__item-text">В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.</p>
+            </div>
+          </li>
+
+          <li class="explanation__item swiper-slide">
+            <div class="explanation__column-image explanation__column-image-glasses"></div>
+            <div class="explanation__column-text explanation__column-text-glasses">
+              <h2 class="explanation__item-title">Надеваем VR-очки</h2>
+              <p class="explanation__item-text">Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.</p>
+            </div>
+          </li>
+
+          <li class="explanation__item swiper-slide">
+            <div class="explanation__column-image explanation__column-image-galaxies"></div>
+            <div class="explanation__column-text">
+              <h2 class="explanation__item-title">Исследуем галактики!</h2>
+              <p class="explanation__item-text">Ребята окунаются в виртуальные миры и с удовольтсием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты о планетах, звёздах и галактике.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="explanation__slider-container slider">
+          <p class="slider__pagination swiper-pagination"></p>
+
+          <div class="slider__buttons">
+            <button class="slider__button slider__button--back swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
+            <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
           </div>
-        </li>
-
-        <li class="explanation__item explanation__item-choose">
-          <div class="explanation__column-image explanation__column-image-choose"></div>
-          <div class="explanation__column-text">
-            <h2 class="explanation__item-title">Выбираем фильм</h2>
-            <p class="explanation__item-text">В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.</p>
-          </div>
-        </li>
-
-        <li class="explanation__item">
-          <div class="explanation__column-image explanation__column-image-glasses"></div>
-          <div class="explanation__column-text explanation__column-text-glasses">
-            <h2 class="explanation__item-title">Надеваем VR-очки</h2>
-            <p class="explanation__item-text">Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.</p>
-          </div>
-        </li>
-
-        <li class="explanation__item">
-          <div class="explanation__column-image explanation__column-image-galaxies"></div>
-          <div class="explanation__column-text">
-            <h2 class="explanation__item-title">Исследуем галактики!</h2>
-            <p class="explanation__item-text">Ребята окунаются в виртуальные миры и с удовольтсием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты о планетах, звёздах и галактике.</p>
-          </div>
-        </li>
-      </ol>
-
-      <div class="explanation__slider-container slider">
-        <p class="slider__number"><span class="product__slider-number--current">01 /</span> 06</p>
-
-        <div class="slider__buttons">
-          <button class="slider__button slider__button--back" type="button"><span class="visually-hidden">Назад</span></button>
-          <button class="slider__button slider__button--next" type="button"><span class="visually-hidden">Вперед</span></button>
         </div>
+
       </div>
     </section>
 
@@ -121,7 +124,7 @@
         <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required>
 
         <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-        <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?" required>
+        <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" required>
 
         <button class="button popup__send-button" type="submit">Отправить</button>
       </form>

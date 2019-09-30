@@ -1,28 +1,11 @@
 .intro {
   display: flex;
   flex-direction: column;
-  min-height: 92vh;
+  min-height: 93vh;
 
   width: 100%;
   max-width: 1278px;
   margin: 0 auto;
-
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/kid_VR.png");
-    background-repeat: no-repeat;
-    background-size: 430px 350px;
-    background-position: 100% 100%;
-
-    width: 530px;
-    height: 350px;
-
-    right: -44px;
-    bottom: 0;
-  }
 }
 
 .intro__main {
