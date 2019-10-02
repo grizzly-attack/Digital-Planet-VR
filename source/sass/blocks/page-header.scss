@@ -6,14 +6,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  box-sizing: border-box;
   justify-content: space-between;
 
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1278px;
+  max-width: 1366px;
+  width: 100%;
   margin: 0 auto;
+
+  padding-left: 64px;
+  padding-right: 64px;
   padding-top: 40px;
+  box-sizing: border-box;
 }
 
 .page-header__list {

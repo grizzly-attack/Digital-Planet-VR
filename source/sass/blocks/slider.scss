@@ -48,9 +48,10 @@
   }
 }
 
-.slider__button--back {
+.slider__button--prev {
   &::before {
     transform: translateX(-50%) rotate(135deg);
+    left: 57%;
   }
 }
 

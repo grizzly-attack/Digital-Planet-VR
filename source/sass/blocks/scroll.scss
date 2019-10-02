@@ -1,8 +1,7 @@
 .scroll {
   flex-shrink: 0;
 
-  padding-top: 10px;
-  padding-bottom: 27px;
+  padding-bottom: 30px;
 }
 
 .scroll__text {
@@ -45,7 +44,7 @@
     border-left: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     transform: rotate(-45deg) translateX(-50%);
-    bottom: 0;
+    bottom: 7px;
     left: 50%;
   }
 }

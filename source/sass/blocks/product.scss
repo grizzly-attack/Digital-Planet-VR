@@ -1,15 +1,12 @@
 .product {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  max-width: 1238px;
-
-  margin: 0 auto;
   flex-grow: 1;
 
-  padding-left: 26px;
-  padding-right: 44px;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding-left: 91px;
+  padding-right: 109px;
 
   box-sizing: border-box;
 }
@@ -17,11 +14,7 @@
 .product__title {
   @include title;
   margin-top: 70px;
-  margin-bottom: 17px;
-}
-
-.product__container {
-  flex-grow: 1;
+  margin-bottom: 18px;
 }
 
 .product__wrapper {
@@ -41,7 +34,7 @@
   width: 48%;
   min-width: 420px;
 
-  margin-top: 147px;
+  margin-top: 145px;
 
   align-self: flex-end;
 
@@ -65,7 +58,7 @@
 
 .product__text {
   margin: 0;
-  margin-top: 28px;
+  margin-top: 29px;
   padding-left: 30px;
 
   font-size: 17px;

@@ -1,13 +1,13 @@
 .explanation {
+  max-width: 1366px;
   width: 100%;
-  max-width: 1238px;
   margin: 0 auto;
-  flex-grow: 1;
 
-  padding-left: 26px;
-  padding-right: 31px;
+  padding-left: 90px;
+  padding-right: 94px;
 
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .explanation__title {
@@ -50,7 +50,7 @@
 
   &:nth-last-child(1),
   &:nth-last-child(2) {
-    margin-bottom: 48px;
+    margin-bottom: 30px;
   }
 }
 

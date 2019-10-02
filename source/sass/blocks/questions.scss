@@ -4,13 +4,14 @@
 
   position: relative;
 
-  max-width: 1238px;
-  width: 100%;
-  margin: 0 auto;
   flex-grow: 1;
 
-  padding-left: 27px;
-  padding-right: 27px;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding-left: 91px;
+  padding-right: 91px;
 
   box-sizing: border-box;
 
@@ -25,7 +26,7 @@
     width: 235px;
     height: 264px;
 
-    right: -33px;
+    right: 31px;
     bottom: 0;
   }
 }
@@ -48,7 +49,6 @@
 }
 
 .questions__item {
-  width: 100%;
   position: relative;
 
   margin-bottom: 5px;
