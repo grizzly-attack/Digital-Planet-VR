@@ -50,6 +50,14 @@
   }
 }
 
+.scroll__link-arrow {
+  display: block;
+  width: 10px;
+  height: 9px;
+
+  margin: 0 auto;
+}
+
 .scroll__container {
   display: flex;
   flex-wrap: wrap;

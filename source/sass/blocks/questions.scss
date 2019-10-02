@@ -14,7 +14,7 @@
 
   box-sizing: border-box;
 
-  /*&::before {
+  &::before {
     content: "";
     position: absolute;
     background-image: url("../img/boy.png");
@@ -27,7 +27,7 @@
 
     right: -33px;
     bottom: 0;
-  }*/
+  }
 }
 
 .questions__main {

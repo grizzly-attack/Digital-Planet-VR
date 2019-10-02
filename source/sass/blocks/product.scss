@@ -1,6 +1,10 @@
 .product {
+  display: flex;
+  flex-direction: column;
+
   width: 100%;
   max-width: 1238px;
+
   margin: 0 auto;
   flex-grow: 1;
 
@@ -14,6 +18,10 @@
   @include title;
   margin-top: 70px;
   margin-bottom: 17px;
+}
+
+.product__container {
+  flex-grow: 1;
 }
 
 .product__wrapper {
