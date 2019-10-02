@@ -44,7 +44,7 @@
     border-left: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     transform: rotate(-45deg) translateX(-50%);
-    bottom: 7px;
+    bottom: -4px;
     left: 50%;
   }
 }
@@ -55,6 +55,10 @@
   height: 9px;
 
   margin: 0 auto;
+
+  &::before {
+    bottom: 7px;
+  }
 }
 
 .scroll__container {
