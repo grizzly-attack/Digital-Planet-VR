@@ -2,7 +2,7 @@
   flex-shrink: 0;
 
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
 
 .scroll__text {
@@ -30,6 +30,10 @@
   text-transform: uppercase;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   &::before {
     content: "";
@@ -98,11 +102,21 @@
     display: none;
   }
 
+  .scroll--intro {
+    display: block;
+  }
+
   .scroll__social {
     display: none;
   }
 
-  .scroll__text {
+  .scroll--intro .scroll__text {
     width: 100%;
+  }
+
+  .scroll__link {
+    &::before {
+      bottom: -4px;
+    }
   }
 }

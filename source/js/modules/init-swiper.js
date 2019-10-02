@@ -56,5 +56,4 @@
   } else {
     createSlider();
   }
-
 })();

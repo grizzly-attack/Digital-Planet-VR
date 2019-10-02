@@ -1,11 +1,16 @@
 .intro {
   display: flex;
   flex-direction: column;
-  min-height: 93vh;
 
   width: 100%;
   max-width: 1278px;
   margin: 0 auto;
+
+  position: relative;
+
+  flex-grow: 1;
+
+  box-sizing: border-box;
 }
 
 .intro__main {
@@ -38,7 +43,7 @@
 
 .intro__button {
   display: inline-block;
-  padding: 18px 10px;
+  padding: 18px;
   padding-bottom: 20px;
   padding-left: 80px;
 
@@ -48,7 +53,8 @@
 
 .intro__button-order {
   position: relative;
-  width: 238px;
+  min-width: 238px;
+  width: auto;
   margin-right: 20px;
   background-color: $dark-green;
   border-color: $dark-green;
@@ -73,9 +79,12 @@
 
 .intro__button-video {
   position: relative;
-  width: 201px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  min-width: 201px;
+  width: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-width: 3px;
   text-decoration: none;
 
   &::before {
@@ -89,6 +98,12 @@
     height: 31px;
     top: 16px;
     left: 37px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .intro__title {
+    font-size: 86px;
   }
 }
 
@@ -110,6 +125,7 @@
 
   .intro__title {
     margin-top: 13px;
+    margin-bottom: 13px;
     font-size: 36px;
   }
 
@@ -123,19 +139,20 @@
   }
 
   .intro__button-container {
-    margin-top: 53px;
+    margin-top: 51px;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro__button {
-    display: block;
-    padding: 16px 35px 16px 72px;
+    padding: 16px 34px 16px 70px;
     margin: 0 auto;
 
     font-size: 18px;
   }
 
   .intro__button-order {
-    width: 207px;
+    min-width: 207px;
 
     &::before {
       background-size: 25px 25px;
@@ -147,7 +164,7 @@
   }
 
   .intro__button-video {
-    width: 207px;
+    min-width: 207px;
     margin-top: 13px;
     padding-top: 11px;
     padding-bottom: 12px;

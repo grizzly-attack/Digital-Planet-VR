@@ -13,10 +13,14 @@ body {
   line-height: 1.5;
 
   background-color: #02050c;
-  background-image: url("../img/body-background.png");
+  background-image: url("../img/body-background@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 40%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/body-background@2x.png");
+  }
 }
 
 img {
@@ -73,23 +77,42 @@ img {
 }
 
 .main-background {
-  background-color: #02050c;
   background-image: none;
 }
 
 .main-background__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   max-width: 1366px;
   width: 100%;
   margin: 0 auto;
-  background-image: url("../img/kid_VR.png"), url("../img/body-background-main-2.png"), url("../img/body-background-main.png");
+
+  background-image: url("../img/kid_VR@1x.png"), url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 430px 350px, cover, cover;
   background-position: 100% 100%, 50% 0, 50% 0;
 
-  @media (max-width: $tablet-width) {
-    background-image: url("../img/body-background-main-2.png"), url("../img/body-background-main.png");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/kid_VR@2x.png"), url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .main-background__wrapper {
+    background-size: 380px auto, cover, cover;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-background__wrapper {
+    background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     background-position: 50% 0, 50% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
+    }
   }
 }

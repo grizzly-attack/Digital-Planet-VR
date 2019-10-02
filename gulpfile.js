@@ -32,7 +32,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src(["source/js/vendor/*.js", "source/js/modules/accordion.js", "source/js/modules/header.js", "source/js/modules/mask.js", "source/js/modules/init-swiper.js", "source/js/modules/popup.js", "source/js/modules/popup-send.js"])
+  return gulp.src(["source/js/vendor/*.js", "source/js/modules/*.js"])
     .pipe(plumber())
     .pipe(concat("main.js"))
     .pipe(terser())
@@ -79,7 +79,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/{icon-*,htmlacademy*}.svg")
+  return gulp.src("source/img/{icon-*,Logo-*,htmlacademy*}.svg")
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
