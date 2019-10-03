@@ -86,16 +86,16 @@
 .scroll__social-image {
   fill: #ffffff;
   opacity: 0.64;
-
-  &:hover {
-    opacity: 1;
-  }
 }
 
 .scroll__social-link {
   display: block;
 
   cursor: pointer;
+
+  &:hover .scroll__social-image {
+    opacity: 1;
+  }
 }
 
 .scroll__social-link--fb {

@@ -78,42 +78,12 @@ img {
 }
 
 .main-background {
-  background-image: none;
-}
-
-.main-background__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  max-width: 1366px;
-  width: 100%;
-  margin: 0 auto;
-
-  background-image: url("../img/kid_VR@1x.png"), url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 430px 350px, cover, cover;
-  background-position: 100% 100%, 50% 0, 50% 0;
+  background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: 50% 0, 50% 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/kid_VR@2x.png"), url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
-  }
-}
-
-@media (max-width: $desktop-width) {
-  .main-background__wrapper {
-    background-size: 380px auto, cover, cover;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .main-background__wrapper {
-    background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, cover;
-    background-position: 50% 0, 50% 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
-    }
+    background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
   }
 }

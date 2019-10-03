@@ -8,3 +8,26 @@
 .page-main__link {
   text-decoration: none;
 }
+
+.page-main--intro {
+  background-image: url("../img/kid_VR@1x.png");
+  background-repeat: no-repeat;
+  background-size: 430px 350px;
+  background-position: 100% 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/kid_VR@2x.png");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .page-main--intro {
+    background-size: 380px auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-main--intro {
+    background-image: none;
+  }
+}

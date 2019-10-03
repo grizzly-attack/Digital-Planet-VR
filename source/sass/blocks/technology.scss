@@ -1,13 +1,12 @@
 .technology {
   position: relative;
+  width: 100%;
+  max-width: 1238px;
+  margin: 0 auto;
   flex-grow: 1;
 
-  max-width: 1366px;
-  width: 100%;
-  margin: 0 auto;
-
-  padding-left: 89px;
-  padding-right: 109px;
+  padding-left: 26px;
+  padding-right: 44px;
 
   box-sizing: border-box;
 }
@@ -358,6 +357,10 @@
     position: absolute;
     bottom: -50px;
     right: 120px;
+  }
+
+  .technology__button {
+    display: none;
   }
 }
 
