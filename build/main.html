@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <title>VR планетарий</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>VR планетарий</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="main-background">
@@ -31,7 +31,7 @@
 
 </symbol></svg>
   </div>
-
+  <div class="main-background__wrapper">
     <header class="page-header page-header--close">
       <div class="page-header__wrapper page-header__wrapper--main">
         <p class="page-header__logo">
@@ -123,7 +123,7 @@
           <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required="">
 
           <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" required="">
+          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" min="11" required="">
 
           <button class="button popup__send-button" type="submit">Отправить</button>
         </form>
@@ -142,6 +142,7 @@
           </li>
         </ul>
     </footer>
+  </div>
 
   <script src="js/main.min.js" async=""></script>
 </body>

@@ -16,8 +16,10 @@
   cursor: pointer;
 
   transition-duration: 0.3s;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $green;
   }
 }

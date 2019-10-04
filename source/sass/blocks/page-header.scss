@@ -201,15 +201,15 @@
   }
 
   .page-header--close .page-header__toggle {
-    width: 26px;
-    height: 20px;
+    width: 24px;
+    height: 19px;
 
     &::before {
       background-image: url("../img/open-button.svg");
       background-repeat: no-repeat;
-      background-size: 26px 20px;
-      width: 26px;
-      height: 20px;
+      background-size: 24px 19px;
+      width: 24px;
+      height: 19px;
     }
   }
 
@@ -218,7 +218,7 @@
   }
 
   .page-header--open .page-header__toggle {
-    width: 26px;
+    width: 24px;
     height: 19px;
 
     &::before {
