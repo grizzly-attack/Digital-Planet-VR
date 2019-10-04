@@ -2,6 +2,8 @@
   max-width: 1238px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 10px;
 
   padding-left: 27px;
   padding-right: 27px;
@@ -11,7 +13,6 @@
 
 .contacts__title {
   @include title;
-  margin-top: 72px;
   margin-bottom: 46px;
 }
 
@@ -163,6 +164,7 @@
 @media (max-width: $tablet-width) {
   .contacts {
     @include padding;
+    margin-top: 63px;
   }
 
   .contacts__list {
@@ -172,7 +174,6 @@
   }
 
   .contacts__title {
-    margin-top: 63px;
     margin-bottom: 30px;
     padding-bottom: 6px;
   }

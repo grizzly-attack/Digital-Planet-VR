@@ -14,11 +14,12 @@
 }
 
 .intro__main {
+  margin-top: 11%;
   flex-grow: 1;
 }
 
 .intro__wrapper {
-  margin-top: 140px;
+  margin-bottom: 20px;
   padding-right: 20px;
   padding-left: 77px;
 }
@@ -38,7 +39,7 @@
 }
 
 .intro__button-container {
-  margin-top: 77px;
+  margin-top: 75px;
 }
 
 .intro__button {
@@ -112,6 +113,10 @@
     &::before {
       display: none;
     }
+  }
+
+  .intro__main {
+    margin-top: 0;
   }
 
   .intro__wrapper {

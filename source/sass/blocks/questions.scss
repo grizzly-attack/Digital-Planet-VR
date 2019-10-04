@@ -9,6 +9,7 @@
   max-width: 1238px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 5%;
 
   padding-left: 27px;
   padding-right: 27px;
@@ -33,11 +34,11 @@
 
 .questions__main {
   flex-grow: 1;
+  margin-bottom: 10px;
 }
 
 .questions__title {
   @include title;
-  margin-top: 70px;
   margin-bottom: 32px;
 }
 
@@ -166,6 +167,7 @@
 
 @media (max-width: $tablet-width) {
   .questions {
+    margin-top: 65px;
     padding-left: 8px;
     padding-right: 8px;
 
@@ -217,7 +219,6 @@
   }
 
   .questions__title {
-    margin-top: 65px;
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 27px;

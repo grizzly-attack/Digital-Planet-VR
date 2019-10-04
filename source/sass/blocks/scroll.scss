@@ -52,13 +52,13 @@
 
 .scroll__link-arrow {
   display: block;
-  width: 10px;
-  height: 9px;
+  width: 25px;
+  height: 15px;
 
   margin: 0 auto;
 
   &::before {
-    bottom: 7px;
+    bottom: 12px;
   }
 }
 

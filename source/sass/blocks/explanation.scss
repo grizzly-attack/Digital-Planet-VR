@@ -2,6 +2,8 @@
   width: 100%;
   max-width: 1238px;
   margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 10px;
 
   padding-left: 26px;
   padding-right: 31px;
@@ -12,7 +14,6 @@
 
 .explanation__title {
   @include title;
-  margin-top: 72px;
   margin-bottom: 46px;
 }
 
@@ -265,10 +266,10 @@
 @media (max-width: $tablet-width) {
   .explanation {
     @include padding;
+    margin-top: 58px;
   }
 
   .explanation__title {
-    margin-top: 58px;
     margin-bottom: 41px;
 
     padding-bottom: 8px;

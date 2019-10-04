@@ -20,6 +20,7 @@
 }
 
 .slider__button {
+  position: relative;
   display: block;
 
   width: 60px;
@@ -28,7 +29,8 @@
   border: none;
   background-color: #1c1c1c;
 
-  position: relative;
+  box-sizing: border-box;
+
   transition-duration: 0.3s;
   outline: none;
 
@@ -50,7 +52,7 @@
   }
 
   &:focus {
-    outline: 1px solid $green;
+    border: 1px solid $green;
   }
 }
 
