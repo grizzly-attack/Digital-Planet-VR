@@ -28,7 +28,7 @@
 .popup__form {
   width: 560px;
   min-height: 380px;
-  background-color: #f3f3f3;
+  background-color: $white;
 
   top: 194px;
   left: 50%;
@@ -57,7 +57,7 @@
 }
 
 .popup__button {
-  color: rgba(28, 28, 28, 0.4);
+  color: $dark-grey-opacity;
   width: 96px;
 }
 
@@ -129,7 +129,7 @@
 
   font-size: 15px;
   font-weight: 400;
-  color: rgba(28, 28, 28, 0.4);
+  color: $dark-grey-opacity;
 
   &::placeholder {
     font-size: 13px;
@@ -162,7 +162,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  color: rgba(28, 28, 28, 0.4);
+  color: $dark-grey-opacity;
 }
 
 .popup__form-message {
@@ -198,7 +198,7 @@
     width: 100%;
     min-height: 100%;
     height: auto;
-    background-color: #f3f3f3;
+    background-color: $white;
 
     top: 0;
     left: 50%;

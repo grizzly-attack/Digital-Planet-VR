@@ -35,7 +35,7 @@
 
     width: 480px;
     height: 480px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid $black-opacity;
     border-radius: 50%;
 
     top: -36px;
@@ -174,7 +174,7 @@
   height: 85px;
   border-radius: 50%;
   border: none;
-  background-color: #15b38d;
+  background-color: $dark-green;
 
   top: 366px;
   right: 36%;
