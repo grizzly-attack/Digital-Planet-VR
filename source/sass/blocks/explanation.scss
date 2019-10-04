@@ -23,7 +23,6 @@
   flex-wrap: wrap;
   width: 100%;
 
-  @include list-reset;
   padding-left: 30px;
   box-sizing: border-box;
 }
@@ -55,7 +54,7 @@
   }
 }
 
-.explanation__item-choose {
+.explanation__item:nth-child(2) {
   position: relative;
 
   &::before {
@@ -73,7 +72,7 @@
   }
 }
 
-.explanation__column-text-glasses {
+.explanation__column-text:nth-child(3) {
   position: relative;
 
   &::before {
@@ -95,13 +94,11 @@
 .explanation__column-image {
   min-width: 195px;
   min-height: 150px;
-  background-repeat: no-repeat;
-  background-position: 0 12px;
-  background-size: 195px 130px;
 
   position: relative;
 
   margin-right: 32px;
+  padding-top: 14px;
 
   &::before {
     content: "";
@@ -139,33 +136,25 @@
   }
 }
 
-.explanation__column-image-inventory {
-  background-image: url("../img/explanation-bg-1.jpg");
-
+.explanation__item:nth-child(1) .explanation__column-image {
   &::after {
     content: "1";
   }
 }
 
-.explanation__column-image-choose {
-  background-image: url("../img/explanation-bg-2.jpg");
-
+.explanation__item:nth-child(2) .explanation__column-image {
   &::after {
     content: "2";
   }
 }
 
-.explanation__column-image-glasses {
-  background-image: url("../img/explanation-bg-3.jpg");
-
+.explanation__item:nth-child(3) .explanation__column-image {
   &::after {
     content: "3";
   }
 }
 
-.explanation__column-image-galaxies {
-  background-image: url("../img/explanation-bg-4.jpg");
-
+.explanation__item:nth-child(4) .explanation__column-image {
   &::after {
     content: "4";
   }
@@ -182,7 +171,7 @@
   }
 }
 
-.explanation__column-text-inventory {
+.explanation__column-text:nth-child(1) {
   position: relative;
 
   &::before {
@@ -238,14 +227,14 @@
     padding-bottom: 10px;
   }
 
-  .explanation__column-text-inventory {
+  .explanation__column-text:nth-child(1) {
     &::before {
       top: 32px;
       left: 24%;
     }
   }
 
-  .explanation__item-choose {
+  .explanation__item:nth-child(2) {
     &::before {
       height: 21%;
       top: 100%;
@@ -253,7 +242,7 @@
     }
   }
 
-  .explanation__column-text-glasses {
+  .explanation__column-text:nth-child(3) {
     &::before {
       width: 75%;
       height: 39px;
@@ -326,23 +315,23 @@
     padding-bottom: 2px;
   }
 
-  .explanation__column-text-inventory::before {
+  .explanation__column-text:nth-child(1)::before {
     display: none;
   }
 
-  .explanation__item-choose {
+  .explanation__item:nth-child(2) {
     &::before {
       display: none;
     }
   }
 
-  .explanation__column-text-glasses {
+  .explanation__column-text:nth-child(3) {
     &::before {
       display: none;
     }
   }
 
-  .explanation__item-glasses::before {
+  .explanation__item:nth-child(3)::before {
     display: none;
   }
 

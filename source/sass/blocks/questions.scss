@@ -43,8 +43,6 @@
 }
 
 .questions__list {
-  @include list-reset;
-
   width: 76.5%;
   box-sizing: border-box;
 }
@@ -88,10 +86,13 @@
   display: none;
 }
 
+.questions__answer p {
+  margin: 0;
+}
+
 .questions__item--open .questions__answer {
   display: block;
 
-  margin: 0;
   margin-top: -4px;
   width: 71%;
   padding-left: 11px;
