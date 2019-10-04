@@ -57,6 +57,7 @@
 
 .page-header__logo-image {
   fill: #ffffff;
+  transition-duration: 0.3s;
 
   &:hover {
     fill: $green;
@@ -64,6 +65,8 @@
 }
 
 .page-header__logo-image--main {
+  transition-duration: 0.3s;
+
   &:hover {
     fill: #ffffff;
   }
@@ -76,6 +79,8 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
+  transition-duration: 0.3s;
 
   &:hover {
     color: $green;
@@ -284,6 +289,7 @@
 
   .page-header__social-link {
     display: block;
+    transition-duration: 0.3s;
 
     &:hover .page-header__social-image {
       opacity: 1;
