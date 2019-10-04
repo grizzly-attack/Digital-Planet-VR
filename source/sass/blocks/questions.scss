@@ -112,6 +112,8 @@
   border-radius: 0;
   box-sizing: border-box;
 
+  outline: none;
+
   &::before {
     content: "";
     position: absolute;

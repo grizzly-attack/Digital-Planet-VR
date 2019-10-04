@@ -29,7 +29,7 @@
 
   var initSliderMobile = function () {
     if (window.matchMedia('(max-width: 767px)').matches) {
-      if (!swiper) {
+      if (!swiper || swiper.destroyed) {
         createSlider();
       }
     } else if (swiper) {
@@ -39,7 +39,7 @@
 
   var initSliderTablet = function () {
     if (window.matchMedia('(max-width: 1023px)').matches) {
-      if (!swiper) {
+      if (!swiper || swiper.destroyed) {
         createSlider();
       }
     } else if (swiper) {

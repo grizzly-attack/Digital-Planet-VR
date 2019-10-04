@@ -1,16 +1,19 @@
 'use strict';
 (function () {
-  var item = document.getElementsByClassName('questions__item');
+  var items = document.querySelectorAll('.questions__item');
+  var currentItem = document.querySelector('.questions__item--open');
 
-  for (var i = 0; i < item.length; i++) {
-    item[i].addEventListener('click', function(el) {
+  for (var i = 0; i < items.length; i++) {
+    items[i].addEventListener('click', function(el) {
+      if (currentItem) {
+        currentItem.classList.remove('questions__item--open');
+      }
 
-      el.currentTarget.classList.toggle('questions__item--open');
-
-      for (var j = 0; j < item.length; j++) {
-        if (item[j] !== el.currentTarget && item[j].className === "item questions__item--open") {
-          item[j].classList.remove('questions__item--open');
-        }
+      if (currentItem !== el.currentTarget) {
+        currentItem = el.currentTarget;
+        currentItem.classList.toggle('questions__item--open');
+      } else {
+        currentItem = null;
       }
     });
   };
