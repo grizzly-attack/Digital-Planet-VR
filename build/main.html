@@ -14,12 +14,12 @@
 <body>
 
   <div class="main-background">
-    <header class="page-header page-header--close">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper page-header__wrapper--main">
         <p class="page-header__logo">
           <a class="page-header__logo-link"><svg class="page-header__logo-image page-header__logo-image--main" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#Logo-Digital-Planet"></use></svg></a>
         </p>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         <nav class="page-header__navigation">
           <ul class="page-header__list">
             <li class="page-header__item page-header__item--intro">
@@ -49,7 +49,7 @@
         </div>
       </div>
 
-      <div class="page-header__contacts page-header__contacts--close">
+      <div class="page-header__contacts">
         <p class="page-header__tel"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
         <ul class="page-header__social">
           <li class="page-header__social-item">
@@ -94,22 +94,6 @@
         </div>
 
       </section>
-
-      <section class="popup popup__send">
-        <div class="popup__wrapper"></div>
-        <form>
-          <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
-          <h2 class="popup__title">Закажите VR планетарий</h2>
-          <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
-          <label for="popup-name" class="visually-hidden">Ваше имя</label>
-          <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required="">
-
-          <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" min="11" required="">
-
-          <button class="button popup__send-button" type="submit">Отправить</button>
-        </form>
-      </section>
     </main>
 
     <footer class="page-footer page-footer--hidden">
@@ -124,6 +108,26 @@
           </li>
         </ul>
     </footer>
+
+    <div class="popup popup__send">
+      <div class="popup__wrapper"></div>
+      <form>
+        <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <h2 class="popup__title">Закажите VR планетарий</h2>
+        <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
+        <div class="popup__input">
+          <label for="popup-name" class="visually-hidden">Ваше имя</label>
+          <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required="">
+        </div>
+
+        <div class="popup__input">
+          <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
+          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" min="11" required="">
+        </div>
+
+        <button class="button popup__send-button" type="submit">Отправить</button>
+      </form>
+    </div>
   </div>
 
   <script src="js/main.min.js" async=""></script>

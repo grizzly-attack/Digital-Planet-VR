@@ -163,6 +163,8 @@
   }
 
   .page-header__navigation {
+    display: none;
+
     width: 100%;
     margin-right: 0;
   }
@@ -186,6 +188,9 @@
     display: block;
     padding: 0;
 
+    width: 24px;
+    height: 19px;
+
     border: none;
     background-color: transparent;
 
@@ -197,14 +202,7 @@
       background-position: 0 0;
       top: 0;
       right: 0;
-    }
-  }
 
-  .page-header--close .page-header__toggle {
-    width: 24px;
-    height: 19px;
-
-    &::before {
       background-image: url("../img/open-button.svg");
       background-repeat: no-repeat;
       background-size: 24px 19px;
@@ -310,11 +308,7 @@
     display: block;
   }
 
-  .page-header--close .page-header__navigation {
-    display: none;
-  }
-
-  .page-header--close .page-header__contacts {
+  .page-header__contacts {
     display: none;
   }
 

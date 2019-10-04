@@ -16,7 +16,7 @@
   margin-bottom: 46px;
 }
 
-.contact__container {
+.contacts__container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -29,7 +29,7 @@
   width: 240px;
 }
 
-.contact__column-right {
+.contacts__column-right {
   width: 570px;
 }
 
@@ -72,13 +72,13 @@
   line-height: 1.3;
 }
 
-.contact__form-container {
+.contacts__form-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.contact__form-container input {
+.contacts__form-container input {
   position: relative;
   display: inline-block;
   width: 49%;
@@ -91,7 +91,7 @@
 
   font-size: 15px;
   font-weight: 400;
-  color: #1c1c1c;
+  color: $dark-grey;
 
   &::placeholder {
     font-size: 13px;
@@ -119,7 +119,7 @@
   }
 }
 
-.contact__form-container textarea {
+.contacts__form-container textarea {
   position: relative;
   width: 100%;
   margin-top: 10px;
@@ -133,7 +133,7 @@
 
   font-size: 15px;
   font-weight: 400;
-  color: #1c1c1c;
+  color: $dark-grey;
 
   &::placeholder {
     font-size: 13px;
@@ -152,7 +152,7 @@
 }
 
 @media (max-width: $desktop-width) {
-  .contact__column-right {
+  .contacts__column-right {
     width: 56%;
   }
 
@@ -178,19 +178,19 @@
     padding-bottom: 6px;
   }
 
-  .contact__column-right {
+  .contacts__column-right {
     width: 100%;
   }
 
-  .contact__form-container {
+  .contacts__form-container {
     margin-right: 9px;
   }
 
-  .contact__form-container input {
+  .contacts__form-container input {
     width: 100%;
   }
 
-  .contact__form-container textarea {
+  .contacts__form-container textarea {
     min-height: 164px;
   }
 

@@ -1,6 +1,6 @@
 .popup {
   display: none;
-  color: #1c1c1c;
+  color: $dark-grey;
 }
 
 .popup__wrapper {
@@ -83,7 +83,7 @@
     width: 1px;
     height: 19px;
 
-    background-color: #1c1c1c;
+    background-color: $dark-grey;
 
     transform: rotate(-45deg);
 
@@ -98,7 +98,7 @@
     width: 1px;
     height: 19px;
 
-    background-color: #1c1c1c;
+    background-color: $dark-grey;
 
     transform: rotate(45deg);
 
@@ -116,7 +116,7 @@
   }
 }
 
-.popup > form > input {
+.popup__input > input {
   display: inline-block;
   width: 400px;
   margin-top: 9px;
@@ -209,7 +209,7 @@
     padding-left: 16px;
   }
 
-  .popup > form > input {
+  .popup__input > input {
     width: 100%;
   }
 }

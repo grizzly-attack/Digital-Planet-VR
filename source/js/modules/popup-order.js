@@ -60,4 +60,5 @@
   }
 
   orderButton.addEventListener('click', modalOpen);
+
 })();
