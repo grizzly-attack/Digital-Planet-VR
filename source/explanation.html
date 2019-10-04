@@ -1,154 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>VR планетарий</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/ubuntu-300.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ubuntu-500.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ubuntu-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ubuntu-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>VR планетарий</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="fonts/ubuntu-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
     <header class="page-header page-header--nojs">
-    <div class="page-header__wrapper">
-      <p class="page-header__logo">
-        <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#Logo-Digital-Planet"></use></svg></a>
-      </p>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-      <nav class="page-header__navigation">
-        <ul class="page-header__list">
-          <li class="page-header__item page-header__item--intro">
-            <a class="page-header__link" href="main.html">Главная</a>
+      <div class="page-header__wrapper">
+        <p class="page-header__logo">
+          <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#Logo-Digital-Planet"></use></svg></a>
+        </p>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+        <nav class="page-header__navigation">
+          <ul class="page-header__list">
+            <li class="page-header__item page-header__item--intro">
+              <a class="page-header__link" href="main.html">Главная</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="product.html">О продукте</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link page-header__link--active">Как работает</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="technology.html">Технология</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="questions.html">Вопросы</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="page-header__order">
+          <button class="button page-header__button" type="button">Заказать</button>
+          <p class="page-header__tel page-header__tel--mobile"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
+        </div>
+      </div>
+
+      <div class="page-header__contacts">
+        <p class="page-header__tel"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
+        <ul class="page-header__social">
+          <li class="page-header__social-item">
+            <a class="page-header__social-link page-header__social-link--fb" href="#"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
           </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="product.html">О продукте</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link page-header__link--active">Как работает</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="technology.html">Технология</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="questions.html">Вопросы</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="contacts.html">Контакты</a>
+          <li class="page-header__social-item">
+            <a class="page-header__social-link page-header__social-link--vk" href="#"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
           </li>
         </ul>
-      </nav>
-
-      <div class="page-header__order">
-        <button class="button page-header__button" type="button">Заказать</button>
-        <p class="page-header__tel page-header__tel--mobile"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
       </div>
-    </div>
+    </header>
 
-    <div class="page-header__contacts">
-      <p class="page-header__tel"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
-      <ul class="page-header__social">
-        <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--fb" href="#"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
+    <main class="page-main">
+      <section class="explanation">
+        <h1 class="explanation__title">Как это работает?</h1>
+        <div class="swiper-container js-slider-mobile">
+          <ol class="explanation__list swiper-wrapper">
+            <li class="explanation__item explanation__item--active swiper-slide">
+              <div class="explanation__column-image explanation__column-image-inventory"></div>
+              <div class="explanation__column-text explanation__column-text-inventory">
+                <h2 class="explanation__item-title">Готовим инвентарь</h2>
+                <p class="explanation__item-text">Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+              </div>
+            </li>
+
+            <li class="explanation__item explanation__item-choose swiper-slide">
+              <div class="explanation__column-image explanation__column-image-choose"></div>
+              <div class="explanation__column-text">
+                <h2 class="explanation__item-title">Выбираем фильм</h2>
+                <p class="explanation__item-text">В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.</p>
+              </div>
+            </li>
+
+            <li class="explanation__item swiper-slide">
+              <div class="explanation__column-image explanation__column-image-glasses"></div>
+              <div class="explanation__column-text explanation__column-text-glasses">
+                <h2 class="explanation__item-title">Надеваем VR-очки</h2>
+                <p class="explanation__item-text">Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.</p>
+              </div>
+            </li>
+
+            <li class="explanation__item swiper-slide">
+              <div class="explanation__column-image explanation__column-image-galaxies"></div>
+              <div class="explanation__column-text">
+                <h2 class="explanation__item-title">Исследуем галактики!</h2>
+                <p class="explanation__item-text">Ребята окунаются в виртуальные миры и с удовольтсием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты о планетах, звёздах и галактике.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="explanation__slider-container slider">
+            <div class="slider__pagination swiper-pagination"></div>
+
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--prev swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
+              <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="scroll">
+        <a class="scroll__link scroll__link-arrow" href="technology.html"><span class="visually-hidden">Скролл вниз</span></a>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text">© Digital Planet, 2019</p>
+      <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--fb" href="#"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
         </li>
-        <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--vk" href="#"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--vk" href="#"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
         </li>
       </ul>
-    </div>
-  </header>
+    </footer>
 
-  <main class="page-main">
-    <section class="explanation">
-      <h1 class="explanation__title">Как это работает?</h1>
-      <div class="swiper-container js-slider-mobile">
-        <ol class="explanation__list swiper-wrapper">
-          <li class="explanation__item explanation__item--active swiper-slide">
-            <div class="explanation__column-image explanation__column-image-inventory"></div>
-            <div class="explanation__column-text explanation__column-text-inventory">
-              <h2 class="explanation__item-title">Готовим инвентарь</h2>
-              <p class="explanation__item-text">Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
-            </div>
-          </li>
-
-          <li class="explanation__item explanation__item-choose swiper-slide">
-            <div class="explanation__column-image explanation__column-image-choose"></div>
-            <div class="explanation__column-text">
-              <h2 class="explanation__item-title">Выбираем фильм</h2>
-              <p class="explanation__item-text">В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.</p>
-            </div>
-          </li>
-
-          <li class="explanation__item swiper-slide">
-            <div class="explanation__column-image explanation__column-image-glasses"></div>
-            <div class="explanation__column-text explanation__column-text-glasses">
-              <h2 class="explanation__item-title">Надеваем VR-очки</h2>
-              <p class="explanation__item-text">Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.</p>
-            </div>
-          </li>
-
-          <li class="explanation__item swiper-slide">
-            <div class="explanation__column-image explanation__column-image-galaxies"></div>
-            <div class="explanation__column-text">
-              <h2 class="explanation__item-title">Исследуем галактики!</h2>
-              <p class="explanation__item-text">Ребята окунаются в виртуальные миры и с удовольтсием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты о планетах, звёздах и галактике.</p>
-            </div>
-          </li>
-        </ol>
-
-        <div class="explanation__slider-container slider">
-          <p class="slider__pagination swiper-pagination"></p>
-
-          <div class="slider__buttons">
-            <button class="slider__button slider__button--prev swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
-            <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-          </div>
+    <div class="popup popup__send">
+      <div class="popup__wrapper"></div>
+      <form>
+        <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <h2 class="popup__title">Закажите VR планетарий</h2>
+        <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
+        <div class="popup__input">
+          <label for="popup-name" class="visually-hidden">Ваше имя</label>
+          <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required>
         </div>
 
-      </div>
-    </section>
+        <div class="popup__input">
+          <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
+          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" min="11" required>
+        </div>
 
-    <div class="scroll">
-      <a class="scroll__link scroll__link-arrow" href="technology.html"><span class="visually-hidden">Скролл вниз</span></a>
+        <button class="button popup__send-button" type="submit">Отправить</button>
+      </form>
     </div>
-  </main>
 
-  <footer class="page-footer">
-    <p class="page-footer__text">© Digital Planet, 2019</p>
-    <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
-    <ul class="page-footer__social">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--fb" href="#"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--vk" href="#"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
-      </li>
-    </ul>
-  </footer>
-
-  <div class="popup popup__send">
-    <div class="popup__wrapper"></div>
-    <form>
-      <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <h2 class="popup__title">Закажите VR планетарий</h2>
-      <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
-      <div class="popup__input">
-        <label for="popup-name" class="visually-hidden">Ваше имя</label>
-        <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required>
-      </div>
-
-      <div class="popup__input">
-        <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-        <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" min="11" required>
-      </div>
-
-      <button class="button popup__send-button" type="submit">Отправить</button>
-    </form>
-  </div>
-
-  <script src="js/main.min.js" async></script>
-</body>
+    <script src="js/main.min.js" async></script>
+  </body>
 </html>

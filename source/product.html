@@ -1,168 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>VR планетарий</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/ubuntu-300.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ubuntu-500.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ubuntu-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ubuntu-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>VR планетарий</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="fonts/ubuntu-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
 
-  <header class="page-header page-header--nojs">
-    <div class="page-header__wrapper">
-      <p class="page-header__logo">
-        <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#Logo-Digital-Planet"></use></svg></a>
-      </p>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-      <nav class="page-header__navigation">
-        <ul class="page-header__list">
-          <li class="page-header__item page-header__item--intro">
-            <a class="page-header__link" href="main.html">Главная</a>
+    <header class="page-header page-header--nojs">
+      <div class="page-header__wrapper">
+        <p class="page-header__logo">
+          <a class="page-header__logo-link" href="main.html"><svg class="page-header__logo-image" width="193" height="28" aria-label="логотип Digital PlaneT"><use xlink:href="img/sprite.svg#Logo-Digital-Planet"></use></svg></a>
+        </p>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+        <nav class="page-header__navigation">
+          <ul class="page-header__list">
+            <li class="page-header__item page-header__item--intro">
+              <a class="page-header__link" href="main.html">Главная</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link page-header__link--active">О продукте</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="explanation.html">Как работает</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="technology.html">Технология</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="questions.html">Вопросы</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="page-header__order">
+          <button class="button page-header__button" type="button">Заказать</button>
+          <p class="page-header__tel page-header__tel--mobile"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
+        </div>
+      </div>
+
+      <div class="page-header__contacts">
+        <p class="page-header__tel"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
+        <ul class="page-header__social">
+          <li class="page-header__social-item">
+            <a class="page-header__social-link page-header__social-link--fb" href="#"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
           </li>
-          <li class="page-header__item">
-            <a class="page-header__link page-header__link--active">О продукте</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="explanation.html">Как работает</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="technology.html">Технология</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="questions.html">Вопросы</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="contacts.html">Контакты</a>
+          <li class="page-header__social-item">
+            <a class="page-header__social-link page-header__social-link--vk" href="#"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
           </li>
         </ul>
-      </nav>
-
-      <div class="page-header__order">
-        <button class="button page-header__button" type="button">Заказать</button>
-        <p class="page-header__tel page-header__tel--mobile"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
       </div>
-    </div>
+    </header>
 
-    <div class="page-header__contacts">
-      <p class="page-header__tel"><a class="page-header__link page-header__link-tel" href="tel:+880055535752">8 (800) 555 35 75</a></p>
-      <ul class="page-header__social">
-        <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--fb" href="#"><svg class="page-header__social-image" width="11" height="22"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
-        </li>
-        <li class="page-header__social-item">
-          <a class="page-header__social-link page-header__social-link--vk" href="#"><svg class="page-header__social-image" width="28" height="15"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
-        </li>
-      </ul>
-    </div>
-  </header>
-
-  <main class="page-main">
-    <section class="product">
-      <h1 class="visually-hidden">Информация о продукте</h1>
-        <p class="product__title">Что такое VR-планетарий?</p>
-          <div class="product__wrapper">
-            <div class="product__text-container">
-              <p class="product__text">Это образовательная программа, использующая технологию виртуальной реальности.</p>
-              <p class="product__text">Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария на всех очках одновременно. В коллекции фильмов идут обучающие картины о космосе, астрономии  и обществознании.</p>
-              <p class="product__text">За счёт реалестичности  и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.</p>
-            </div>
-
-            <div class="product__slider">
-              <p class="product__slider-content">Что показываем в планетарии</p>
-              <div class="swiper-container">
-                <ul class="product__slider-list swiper-wrapper">
-
-                <li class="product__slide swiper-slide">
-                  <div class="product__slide-wrapper">
-                    <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                  </div>
-                </li>
-                <li class="product__slide swiper-slide">
-                  <div class="product__slide-wrapper">
-                    <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                  </div>
-                </li>
-                <li class="product__slide swiper-slide">
-                  <div class="product__slide-wrapper">
-                    <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                  </div>
-                </li>
-                <li class="product__slide swiper-slide">
-                  <div class="product__slide-wrapper">
-                    <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                  </div>
-                </li>
-                <li class="product__slide swiper-slide">
-                  <div class="product__slide-wrapper">
-                    <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                  </div>
-                </li>
-                <li class="product__slide swiper-slide">
-                  <div class="product__slide-wrapper">
-                    <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
-                  </div>
-                </li>
-              </ul>
-
-              <div class="product__slider-container slider">
-                <p class="slider__pagination swiper-pagination"></p>
-
-                <div class="slider__buttons">
-                  <button class="slider__button slider__button--prev swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
-                  <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
-                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                </div>
+    <main class="page-main">
+      <section class="product">
+        <h1 class="visually-hidden">Информация о продукте</h1>
+          <p class="product__title">Что такое VR-планетарий?</p>
+            <div class="product__wrapper">
+              <div class="product__text-container">
+                <p class="product__text">Это образовательная программа, использующая технологию виртуальной реальности.</p>
+                <p class="product__text">Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария на всех очках одновременно. В коллекции фильмов идут обучающие картины о космосе, астрономии  и обществознании.</p>
+                <p class="product__text">За счёт реалестичности  и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.</p>
               </div>
 
+              <div class="product__slider">
+                <p class="product__slider-content">Что показываем в планетарии</p>
+                <div class="swiper-container">
+                <ul class="product__slider-list swiper-wrapper">
+
+                  <li class="product__slide swiper-slide">
+                    <div class="product__slide-wrapper">
+                      <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                    </div>
+                  </li>
+                  <li class="product__slide swiper-slide">
+                    <div class="product__slide-wrapper">
+                      <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                    </div>
+                  </li>
+                  <li class="product__slide swiper-slide">
+                    <div class="product__slide-wrapper">
+                      <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                    </div>
+                  </li>
+                  <li class="product__slide swiper-slide">
+                    <div class="product__slide-wrapper">
+                      <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                    </div>
+                  </li>
+                  <li class="product__slide swiper-slide">
+                    <div class="product__slide-wrapper">
+                      <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                    </div>
+                  </li>
+                  <li class="product__slide swiper-slide">
+                    <div class="product__slide-wrapper">
+                      <img class="product__slide-image" src="img/astronaut-in-outer-space.jpg" width="562" height="300" alt="Космонавт в космосе">
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="product__slider-container slider">
+                  <div class="slider__pagination swiper-pagination"></div>
+
+                  <div class="slider__buttons">
+                    <button class="slider__button slider__button--prev swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
+                    <button class="slider__button slider__button--next swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
+      </section>
+
+      <div class="scroll">
+        <a class="scroll__link scroll__link-arrow" href="explanation.html"><span class="visually-hidden">Скролл вниз</span></a>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text">© Digital Planet, 2019</p>
+      <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--fb" href="#"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--vk" href="#"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="popup popup__send">
+      <div class="popup__wrapper"></div>
+      <form>
+        <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <h2 class="popup__title">Закажите VR планетарий</h2>
+        <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
+        <div class="popup__input">
+          <label for="popup-name" class="visually-hidden">Ваше имя</label>
+          <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required>
         </div>
-    </section>
 
-    <div class="scroll">
-      <a class="scroll__link scroll__link-arrow" href="explanation.html"><span class="visually-hidden">Скролл вниз</span></a>
+        <div class="popup__input">
+          <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
+          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" min="11" required>
+        </div>
+
+        <button class="button popup__send-button" type="submit">Отправить</button>
+      </form>
     </div>
-  </main>
 
-  <footer class="page-footer">
-    <p class="page-footer__text">© Digital Planet, 2019</p>
-    <p class="page-footer__text">Детский VR планетарий. Все права защищены.</p>
-    <ul class="page-footer__social">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--fb" href="#"><svg class="page-footer__social-image" width="8" height="17"><use xlink:href="img/sprite.svg#icon-fb"></use></svg><span class="visually-hidden">facebook</span></a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--vk" href="#"><svg class="page-footer__social-image" width="21" height="11"><use xlink:href="img/sprite.svg#icon-vk"></use></svg><span class="visually-hidden">вконтакте</span></a>
-      </li>
-    </ul>
-  </footer>
+    <script src="js/main.min.js" async></script>
 
-  <div class="popup popup__send">
-    <div class="popup__wrapper"></div>
-    <form>
-      <button class="popup__close-button popup__close-button--order" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <h2 class="popup__title">Закажите VR планетарий</h2>
-      <p class="popup__text">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам</p>
-      <div class="popup__input">
-        <label for="popup-name" class="visually-hidden">Ваше имя</label>
-        <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required>
-      </div>
-
-      <div class="popup__input">
-        <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-        <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" min="11" required>
-      </div>
-
-      <button class="button popup__send-button" type="submit">Отправить</button>
-    </form>
-  </div>
-
-<script src="js/main.min.js" async></script>
-
-</body>
+  </body>
 </html>

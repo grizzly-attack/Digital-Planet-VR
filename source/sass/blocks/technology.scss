@@ -102,7 +102,7 @@
 }
 
 
-.technology__item-1 {
+.technology__item:nth-child(1) {
   &::before {
     content: "";
     position: absolute;
@@ -118,7 +118,7 @@
   }
 }
 
-.technology__item-2 {
+.technology__item:nth-child(2) {
   &::before {
     content: "";
     position: absolute;
@@ -134,7 +134,7 @@
   }
 }
 
-.technology__item-3 {
+.technology__item:nth-child(3) {
   &::before {
     content: "";
     position: absolute;
@@ -150,7 +150,7 @@
   }
 }
 
-.technology__item-4 {
+.technology__item:nth-child(4) {
   margin-top: 50px;
 
   &::before {
@@ -226,6 +226,10 @@
     &:nth-child(2n) {
       padding: 0;
     }
+
+    &::before {
+      display: none;
+    }
   }
 
   .technology__list .slider__item--locked {
@@ -278,16 +282,7 @@
     }
   }
 
-  .technology__item-1,
-  .technology__item-2,
-  .technology__item-3,
-  .technology__item-4 {
-    &::before {
-      display: none;
-    }
-  }
-
-  .technology__item-4 {
+  .technology__item:nth-child(4) {
     margin-top: 34px;
   }
 
@@ -309,7 +304,7 @@
     margin-left: auto;
   }
 
-  .technology__item-image-container-1 {
+  .technology__item-image-container:nth-child(1) {
     &::before {
       top: 122px;
       left: 43px;
@@ -321,7 +316,7 @@
     }
   }
 
-  .technology__item-image-container-2 {
+  .technology__item-image-container:nth-child(2) {
     &::before {
       top: 152px;
       left: 227px;
@@ -333,7 +328,7 @@
     }
   }
 
-  .technology__item-image-container-3 {
+  .technology__item-image-container:nth-child(3) {
     &::before {
       top: 106px;
       left: 232px;
@@ -345,7 +340,7 @@
     }
   }
 
-  .technology__item-image-container-4 {
+  .technology__item-image-container:nth-child(4) {
     &::before {
       top: 189px;
       left: 356px;
@@ -394,7 +389,7 @@
     left: 9px;
   }
 
-  .technology__item-image-container-1 {
+  .technology__item-image-container:nth-child(1) {
     &::before {
       top: 87px;
       left: 30px;
@@ -406,7 +401,7 @@
     }
   }
 
-  .technology__item-image-container-2 {
+  .technology__item-image-container:nth-child(2) {
     &::before {
       top: 109px;
       left: 165px;
@@ -418,7 +413,7 @@
     }
   }
 
-  .technology__item-image-container-3 {
+  .technology__item-image-container:nth-child(3) {
     &::before {
       top: 76px;
       left: 169px;
@@ -430,7 +425,7 @@
     }
   }
 
-  .technology__item-image-container-4 {
+  .technology__item-image-container:nth-child(4) {
     &::before {
       top: 130px;
       left: 257px;
