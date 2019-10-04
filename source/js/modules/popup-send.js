@@ -4,7 +4,6 @@
   var popupMessage = document.querySelector('.popup__message');
   var okButton = document.querySelector('.popup__button');
   var messageOverlay = document.querySelector('.popup__wrapper');
-  var body = document.querySelector('body');
   var closeButton = document.querySelector('.popup__close-button--send');
 
   if (!sendButton) {
@@ -14,19 +13,19 @@
   sendButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupMessage.classList.add('popup--show');
-    body.classList.add('popup-modal');
+    bodyScrollLock.disableBodyScroll();
   });
 
   closeButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupMessage.classList.remove('popup--show');
-    body.classList.remove('popup-modal');
+    bodyScrollLock.enableBodyScroll();
   });
 
   okButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupMessage.classList.remove('popup--show');
-    body.classList.remove('popup-modal');
+    bodyScrollLock.enableBodyScroll();
   });
 
   window.addEventListener('keydown', function (evt) {
@@ -34,7 +33,7 @@
       evt.preventDefault();
       if (popupMessage.classList.contains('popup--show')) {
         popupMessage.classList.remove('popup--show');
-        popupMessage.classList.remove('popup-modal');
+        bodyScrollLock.enableBodyScroll();
       }
     };
   });
@@ -42,6 +41,6 @@
   messageOverlay.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupMessage.classList.remove('popup--show');
-    body.classList.remove('popup-modal');
+    bodyScrollLock.enableBodyScroll();
   });
 })();

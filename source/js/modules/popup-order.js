@@ -1,7 +1,6 @@
 'use strict';
 (function () {
   var openButton = document.querySelector('.page-header__button');
-
   var popupSend = document.querySelector('.popup__send');
 
   if (!popupSend) {
@@ -14,13 +13,12 @@
   var userName = popupSend.querySelector('[name="user-name"]');
   var phone = popupSend.querySelector('[name="user-phone"]');
 
-  var body = document.querySelector('body');
   var form = popupSend.querySelector('form');
 
   function modalOpen(evt) {
     evt.preventDefault();
     popupSend.classList.add('popup--show');
-    body.classList.add('popup-modal');
+    bodyScrollLock.disableBodyScroll();
     userName.focus();
   }
 
@@ -29,7 +27,7 @@
   close.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupSend.classList.remove('popup--show');
-    body.classList.remove('popup-modal');
+    bodyScrollLock.enableBodyScroll();
   });
 
   form.addEventListener('submit', function () {
@@ -42,7 +40,7 @@
       evt.preventDefault();
       if (popupSend.classList.contains('popup--show')) {
         popupSend.classList.remove('popup--show');
-        popupSend.classList.remove('popup-modal');
+        bodyScrollLock.enableBodyScroll();
       }
     };
   });
@@ -50,7 +48,7 @@
   sendOverlay.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupSend.classList.remove('popup--show');
-    body.classList.remove('popup-modal');
+    bodyScrollLock.enableBodyScroll();
   });
 
   var orderButton = document.querySelector('.intro__button-order');

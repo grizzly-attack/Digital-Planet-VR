@@ -60,6 +60,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "body-scroll-lock": "^2.6.4",
     "del": "^4.1.1",
     "imask": "^5.2.1",
     "slick-carousel": "^1.8.1",
