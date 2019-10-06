@@ -31,7 +31,6 @@
 
   box-sizing: border-box;
 
-  transition-duration: 0.3s;
   outline: none;
 
   &::before {
@@ -45,6 +44,8 @@
     border-bottom: 1px solid #ffffff;
     top: 17px;
     left: 50%;
+
+    transition-duration: 0.3s;
   }
 
   &:hover::before {

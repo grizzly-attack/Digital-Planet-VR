@@ -131,17 +131,19 @@
   font-weight: 400;
   color: $dark-grey-opacity;
 
+  outline: none;
+
   &::placeholder {
     font-size: 13px;
     font-weight: 400;
   }
 
   &:focus {
-    border: 2px solid $green;
+    outline: 2px solid $green;
   }
 
-  &:valid {
-    border: 2px solid #1dc04b;
+  &:focus:valid {
+    outline: 2px solid #1dc04b;
     background-image: url("../img/correct.svg");
     background-repeat: no-repeat;
     background-size: 16px 13px;
@@ -149,7 +151,7 @@
   }
 
   &:focus:invalid {
-    border: 2px solid #f97676;
+    outline: 2px solid #f97676;
     background-image: url("../img/incorrect.svg");
     background-repeat: no-repeat;
     background-size: 12px 12px;

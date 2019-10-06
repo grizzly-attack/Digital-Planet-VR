@@ -95,7 +95,7 @@
                 <input id="name" type="text" name="name" placeholder="Ваше имя" required>
 
                 <label for="mail" class="visually-hidden">Ваше e-mail</label>
-                <input id="mail" type="tel" name="mail" placeholder="Ваше e-mail" required>
+                <input id="mail" type="email" name="mail" placeholder="Ваше e-mail" pattern="/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$/" required>
 
                 <label for="question" class="visually-hidden">Что вас интересует?</label>
                 <textarea id="question" name="question" placeholder="Что вас интересует?" required></textarea>
@@ -135,7 +135,7 @@
 
         <div class="popup__input">
           <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" pattern=".{13,}" required>
+          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" pattern=".{15,}" required>
         </div>
 
         <button class="button popup__send-button" type="submit">Отправить</button>
