@@ -23,6 +23,10 @@ body {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/body-background@2x.png");
   }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 img {
