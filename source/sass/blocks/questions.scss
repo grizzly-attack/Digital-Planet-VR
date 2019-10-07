@@ -27,7 +27,7 @@
     width: 235px;
     height: 264px;
 
-    right: 31px;
+    right: -33px;
     bottom: 0;
   }
 }
@@ -39,7 +39,7 @@
 
 .questions__title {
   @include title;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .questions__list {
@@ -50,8 +50,15 @@
 .questions__item {
   position: relative;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
   margin-bottom: 5px;
   padding-left: 39px;
+
+  box-sizing: border-box;
 
   background-color: #ffffff;
   color: $dark-grey;
@@ -72,10 +79,12 @@
 
 .questions__question {
   position: relative;
+
+  width: 85%;
   margin: 0;
   padding-top: 19px;
-  padding-right: 82px;
   padding-bottom: 22px;
+  box-sizing: border-box;
 
   font-weight: 500;
   font-size: 21px;
@@ -84,6 +93,11 @@
 
 .questions__answer {
   display: none;
+
+  margin-top: -4px;
+  width: 71%;
+  padding-left: 11px;
+  padding-bottom: 34px;
 }
 
 .questions__answer p {
@@ -92,21 +106,13 @@
 
 .questions__item--open .questions__answer {
   display: block;
-
-  margin-top: -4px;
-  width: 71%;
-  padding-left: 11px;
-  padding-bottom: 34px;
 }
 
 .questions__button {
-  position: absolute;
+  position: relative;
   padding: 0;
 
-  top: 0;
-  right: 0;
   width: 68px;
-  height: 100%;
 
   background-color: $dark-green;
   border: none;
@@ -187,7 +193,6 @@
 
   .questions__item {
     padding-left: 8px;
-    padding-right: 8px;
 
     box-sizing: border-box;
 
@@ -196,11 +201,11 @@
     }
   }
 
-  .questions__item--open .questions__answer {
+  .questions__answer {
     width: 100%;
     margin-top: 8px;
     padding-left: 0;
-    padding-right: 9px;
+    padding-right: 16px;
     padding-bottom: 27px;
 
     box-sizing: border-box;
@@ -208,7 +213,7 @@
 
   .questions__button {
     width: 32px;
-    right: -8px;
+    min-height: 44px;
 
     &::before {
       width: 16px;
@@ -231,8 +236,8 @@
   }
 
   .questions__question {
+    width: 88%;
     padding-top: 9px;
-    padding-right: 32px;
     padding-bottom: 13px;
     line-height: 1.35;
     font-size: 17px;
@@ -242,7 +247,6 @@
 
   .questions__item--open .questions__button {
     width: 32px;
-    right: -8px;
 
     &::before {
       width: 16px;

@@ -24,7 +24,7 @@
   line-height: 1.4;
 }
 
-.popup > form,
+.popup form,
 .popup__form {
   width: 560px;
   min-height: 380px;
@@ -195,7 +195,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .popup > form,
+  .popup form,
   .popup__form {
     position: fixed;
     width: 100%;

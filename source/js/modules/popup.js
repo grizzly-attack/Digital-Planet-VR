@@ -1,17 +1,8 @@
 'use strict';
 (function () {
-  function popupOpenedClosed (popup, button, field) {
+  function popupClosed (popup) {
     var close = popup.querySelector('.popup__close-button');
     var overlay = popup.querySelector('.popup__wrapper');
-
-    button.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      popupOpen(popup);
-
-      if (field) {
-        field.focus();
-      }
-    });
 
     close.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -45,22 +36,27 @@
 
   function popupOrderActivate() {
     var openButton = document.querySelector('.page-header__button');
-    var popupSend = document.querySelector('.popup__send');
-    var userName = popupSend.querySelector('[name="user-name"]');
+    var popupSend = document.querySelector('.popup--send');
 
     if (!popupSend) {
       return;
     }
 
+    var userName = popupSend.querySelector('[name="user-name"]');
     var phone = popupSend.querySelector('[name="user-phone"]');
     var form = popupSend.querySelector('form');
 
-    popupOpenedClosed(popupSend, openButton, userName);
-    form.addEventListener('submit', function () {
-        localStorage.setItem('name', name.value);
-        localStorage.setItem('phone', phone.value);
-      });
+    openButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popupOpen(popupSend);
+      userName.focus();
+    });
 
+    popupClosed(popupSend);
+    form.addEventListener('submit', function () {
+      localStorage.setItem('name', name.value);
+      localStorage.setItem('phone', phone.value);
+    });
 
     var orderButton = document.querySelector('.intro__button-order');
 
@@ -81,10 +77,21 @@
       return;
     }
 
-    var popupMessage = document.querySelector('.popup__message');
+    var popupMessage = document.querySelector('.popup--message');
     var okButton = popupMessage.querySelector('.popup__button');
 
-    popupOpenedClosed(popupMessage, sendButton);
+    sendButton.addEventListener('click', function (evt) {
+      var fieldName = document.querySelector('#name');
+      var fieldMail = document.querySelector('#mail');
+      var fieldQuestion = document.querySelector('#question');
+
+      if (fieldName.validity.valid && fieldMail.validity.valid && fieldQuestion.validity.valid) {
+        evt.preventDefault();
+        popupOpen(popupMessage);
+      }
+    });
+
+    popupClosed(popupMessage);
 
     okButton.addEventListener('click', function (evt) {
       evt.preventDefault();
