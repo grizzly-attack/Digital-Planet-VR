@@ -8,7 +8,7 @@
   }
 
   var createSlider = function () {
-    window.swiper = new Swiper('.swiper-container', {
+    swiper = new window.Swiper('.swiper-container', {
       slidesPerView: 1,
       pagination: {
         el: '.swiper-pagination',
