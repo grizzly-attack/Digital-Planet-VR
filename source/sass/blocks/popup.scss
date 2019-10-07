@@ -197,6 +197,7 @@
 @media (max-width: $tablet-width) {
   .popup > form,
   .popup__form {
+    position: fixed;
     width: 100%;
     min-height: 100%;
     height: auto;
