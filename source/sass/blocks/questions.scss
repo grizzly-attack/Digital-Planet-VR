@@ -60,7 +60,7 @@
 
   box-sizing: border-box;
 
-  background-color: #ffffff;
+  background-color: $white;
   color: $dark-grey;
 
   &::before {
@@ -127,7 +127,7 @@
 
     width: 24px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: $white;
 
     left: 22px;
     top: 50%;
@@ -140,7 +140,7 @@
 
     width: 2px;
     height: 24px;
-    background-color: #ffffff;
+    background-color: $white;
 
     left: 33px;
     top: 50%;
@@ -155,7 +155,7 @@
 
     width: 24px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: $white;
     transform: rotate(45deg) translateY(-25%);
     left: 22px;
     top: 50%;
@@ -164,7 +164,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-color: #ffffff;
+    background-color: $white;
 
     transform: rotate(-45deg) translateY(0%);
     left: 22px;

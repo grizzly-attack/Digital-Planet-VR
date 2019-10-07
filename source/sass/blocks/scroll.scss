@@ -19,7 +19,7 @@
   justify-content: center;
   padding-bottom: 3px;
 
-  color: #ffffff;
+  color: $white;
   text-align: center;
   letter-spacing: 0.12em;
   font-size: 11px;
@@ -42,8 +42,8 @@
     width: 10px;
     height: 9px;
 
-    border-left: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid $white;
+    border-bottom: 1px solid $white;
     transform: rotate(-45deg) translateX(-50%);
     bottom: -4px;
     left: 50%;
@@ -85,7 +85,7 @@
 }
 
 .scroll__social-image {
-  fill: #ffffff;
+  fill: $white;
   opacity: 0.64;
 }
 

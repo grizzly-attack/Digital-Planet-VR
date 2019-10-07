@@ -26,7 +26,7 @@
 
   z-index: -1;
 
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 50%;
 
   &::before {
@@ -193,7 +193,7 @@
   position: absolute;
   top: 25px;
   left: 26px;
-  fill: #ffffff;
+  fill: $white;
 }
 
 .technology__slider-container {
@@ -252,7 +252,7 @@
     width: 408px;
     height: 408px;
 
-    background-color: #ffffff;
+    background-color: $white;
     border-radius: 50%;
 
     &::before {

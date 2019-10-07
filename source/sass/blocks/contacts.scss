@@ -50,14 +50,14 @@
 
 .contacts__item-link {
   line-height: 1.3;
-  color: #ffffff;
+  color: $white;
 
   border-bottom: 1px solid transparent;
   text-decoration: none;
   transition-duration: 0.3s;
 
   &:hover {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid $white;
   }
 }
 
