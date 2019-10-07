@@ -1,5 +1,5 @@
 'use strict';
 
 (function () {
-  svg4everybody();
+  window.svg4everybody();
 })();

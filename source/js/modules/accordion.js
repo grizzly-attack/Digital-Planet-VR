@@ -4,7 +4,7 @@
   var currentItem = document.querySelector('.questions__item--open');
 
   for (var i = 0; i < items.length; i++) {
-    items[i].addEventListener('click', function(el) {
+    items[i].addEventListener('click', function (el) {
       if (currentItem) {
         currentItem.classList.remove('questions__item--open');
       }
@@ -16,5 +16,5 @@
         currentItem = null;
       }
     });
-  };
+  }
 })();

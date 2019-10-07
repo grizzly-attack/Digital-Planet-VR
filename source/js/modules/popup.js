@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-  function initPopup (popup) {
+  function initPopup(popup) {
     var close = popup.querySelector('.popup__close-button');
     var overlay = popup.querySelector('.popup__wrapper');
 
@@ -15,7 +15,7 @@
         if (popup.classList.contains('popup--show')) {
           popupClose(popup);
         }
-      };
+      }
     });
 
     overlay.addEventListener('click', function (evt) {
@@ -26,12 +26,12 @@
 
   function popupOpen(popup) {
     popup.classList.add('popup--show');
-    bodyScrollLock.disableBodyScroll();
+    window.bodyScrollLock.disableBodyScroll();
   }
 
   function popupClose(popup) {
     popup.classList.remove('popup--show');
-    bodyScrollLock.enableBodyScroll();
+    window.bodyScrollLock.enableBodyScroll();
   }
 
   function initOrderPopup() {
@@ -68,7 +68,7 @@
       evt.preventDefault();
       popupOpen(popupSend);
       userName.focus();
-    });;
+    });
   }
 
   function initMessagePopup() {

@@ -10,14 +10,14 @@
   }
 
   header.classList.remove('page-header--nojs');
-  navToggle.addEventListener('click', function() {
-  header.classList.toggle('page-header--open');
-  main.classList.toggle('page-main--open');
+  navToggle.addEventListener('click', function () {
+    header.classList.toggle('page-header--open');
+    main.classList.toggle('page-main--open');
 
     if (header.classList.contains('page-header--open')) {
-      bodyScrollLock.disableBodyScroll();
+      window.bodyScrollLock.disableBodyScroll();
     } else {
-      bodyScrollLock.enableBodyScroll();
+      window.bodyScrollLock.enableBodyScroll();
     }
   });
 })();
