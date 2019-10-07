@@ -13,7 +13,7 @@
 
 .contacts__title {
   @include title;
-  margin-bottom: 46px;
+  margin-bottom: 49px;
 }
 
 .contacts__container {
@@ -165,7 +165,7 @@
     margin-right: 9px;
   }
 
-  .contacts__form-field input {
+  .contacts__form-field {
     width: 100%;
   }
 
