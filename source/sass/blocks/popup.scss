@@ -72,7 +72,7 @@
   border: none;
 
   cursor: pointer;
-  transition: background-color $time $timing;
+  transition: opacity $time $timing;
 
   outline: none;
 
@@ -116,47 +116,12 @@
   }
 }
 
-.popup__input > input {
-  display: inline-block;
+.popup__input input {
   width: 400px;
   margin-top: 9px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  border: none;
 
-  padding: 15px;
   padding-left: 22px;
-  box-sizing: border-box;
-
-  font-size: 15px;
-  font-weight: 400;
-  color: $dark-grey-opacity;
-
-  outline: none;
-
-  &::placeholder {
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  &:focus {
-    outline: 2px solid $green;
-  }
-
-  &:focus:valid {
-    outline: 2px solid #1dc04b;
-    background-image: url("../img/correct.svg");
-    background-repeat: no-repeat;
-    background-size: 16px 13px;
-    background-position: top 17px right 17px;
-  }
-
-  &:focus:invalid {
-    outline: 2px solid #f97676;
-    background-image: url("../img/incorrect.svg");
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    background-position: top 18px right 17px;
-  }
 }
 
 .popup__send-button,

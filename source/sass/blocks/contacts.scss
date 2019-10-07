@@ -80,52 +80,27 @@
   flex-wrap: wrap;
 }
 
-.contacts__form-container input {
-  position: relative;
-  display: inline-block;
+.contacts__form-field {
   width: 49%;
   margin-top: 12px;
-
-  padding: 15px;
-  box-sizing: border-box;
-
-  border: none;
-
-  font-size: 15px;
-  font-weight: 400;
-  color: $dark-grey;
-  outline: none;
-
-  &::placeholder {
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  &:focus {
-    outline: 2px solid $green;
-  }
-
-  &:focus:valid {
-    outline: 2px solid #1dc04b;
-    background-image: url("../img/correct.svg");
-    background-repeat: no-repeat;
-    background-size: 16px 13px;
-    background-position: top 17px right 17px;
-  }
-
-  &:focus:invalid {
-    outline: 2px solid #f97676;
-    background-image: url("../img/incorrect.svg");
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    background-position: top 18px right 17px;
-  }
 }
 
-.contacts__form-container textarea {
+.contacts__form-field input {
+  width: 100%;
   position: relative;
+}
+
+.contacts__form-textarea {
   width: 100%;
   margin-top: 10px;
+
+  line-height: 0;
+}
+
+.contacts__form-textarea textarea {
+  width: 100%;
+  position: relative;
+
   min-height: 144px;
 
   padding: 15px;
@@ -190,11 +165,11 @@
     margin-right: 9px;
   }
 
-  .contacts__form-container input {
+  .contacts__form-field input {
     width: 100%;
   }
 
-  .contacts__form-container textarea {
+  .contacts__form-textarea textarea {
     min-height: 164px;
   }
 
