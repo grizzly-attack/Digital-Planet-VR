@@ -14,14 +14,14 @@ body {
   line-height: 1.5;
 
   background-color: #02050c;
-  background-image: url("../img/body-background@1x.png");
+  background-image: url("../img/body-background@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 40%;
   background-attachment: fixed;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/body-background@2x.png");
+    background-image: url("../img/body-background@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
