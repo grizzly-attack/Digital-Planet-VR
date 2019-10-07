@@ -60,6 +60,8 @@
   background-color: $dark-green;
   border-color: $dark-green;
 
+  transition-duration: 0.3s;
+
   &:hover {
     border-color: $green;
   }
