@@ -24,7 +24,10 @@
   border-bottom: solid 3px $green;
   display: inline-block;
 
+  align-self: flex-start;
+
   @media (max-width: $tablet-width) {
+    align-self: auto;
     display: block;
 
     font-size: 28px;

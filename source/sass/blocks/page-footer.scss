@@ -61,15 +61,18 @@
 .page-footer__social-image {
   fill: $white;
   opacity: 0.64;
-  transition-duration: 0.3s;
-
-  &:hover {
-    opacity: 1;
-  }
 }
 
 .page-footer__social-link {
   display: block;
+
+  .page-footer__social-image {
+    transition: opacity $time $timing;
+  }
+
+  &:hover .page-footer__social-image {
+    opacity: 1;
+  }
 }
 
 .page-footer__social-link--fb {
@@ -106,15 +109,18 @@
   .page-footer__social-image {
     fill: $white;
     opacity: 0.64;
-    transition-duration: 0.3s;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   .page-footer__social-link {
     display: block;
+
+    .page-footer__social-image {
+      transition: opacity $time $timing;
+    }
+
+    &:hover .page-footer__social-image {
+      opacity: 1;
+    }
   }
 
   .page-footer__social-link--fb {

@@ -54,7 +54,7 @@
 
   border-bottom: 1px solid transparent;
   text-decoration: none;
-  transition-duration: 0.3s;
+  transition: border-color $time $timing;
 
   &:hover {
     border-bottom: 1px solid $white;

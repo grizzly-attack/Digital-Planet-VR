@@ -29,7 +29,7 @@
   text-transform: uppercase;
 
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition: opacity $time $timing;
 
   &:hover {
     opacity: 0.5;
@@ -93,7 +93,10 @@
   display: block;
 
   cursor: pointer;
-  transition-duration: 0.3s;
+
+  .scroll__social-image {
+    transition: opacity $time $timing;
+  }
 
   &:hover .scroll__social-image {
     opacity: 1;

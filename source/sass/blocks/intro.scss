@@ -60,7 +60,7 @@
   background-color: $dark-green;
   border-color: $dark-green;
 
-  transition-duration: 0.3s;
+  transition: border-color $time $timing, background-color $time $timing;
 
   &:hover {
     border-color: $green;

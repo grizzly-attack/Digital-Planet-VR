@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-  function popupClosed (popup) {
+  function initPopup (popup) {
     var close = popup.querySelector('.popup__close-button');
     var overlay = popup.querySelector('.popup__wrapper');
 
@@ -34,7 +34,7 @@
     bodyScrollLock.enableBodyScroll();
   }
 
-  function popupOrderActivate() {
+  function initOrderPopup() {
     var openButton = document.querySelector('.page-header__button');
     var popupSend = document.querySelector('.popup--send');
 
@@ -52,7 +52,7 @@
       userName.focus();
     });
 
-    popupClosed(popupSend);
+    initPopup(popupSend);
     form.addEventListener('submit', function () {
       localStorage.setItem('name', name.value);
       localStorage.setItem('phone', phone.value);
@@ -71,7 +71,7 @@
     });;
   }
 
-  function popupMessageActivate() {
+  function initMessagePopup() {
     var sendButton = document.querySelector('.contacts__form-button');
     if (!sendButton) {
       return;
@@ -91,13 +91,13 @@
       }
     });
 
-    popupClosed(popupMessage);
+    initPopup(popupMessage);
 
     okButton.addEventListener('click', function (evt) {
       evt.preventDefault();
       popupClose(popupMessage);
     });
   }
-  popupOrderActivate();
-  popupMessageActivate();
+  initOrderPopup();
+  initMessagePopup();
 })();

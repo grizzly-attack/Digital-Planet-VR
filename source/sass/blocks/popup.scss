@@ -72,7 +72,7 @@
   border: none;
 
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition: background-color $time $timing;
 
   outline: none;
 
