@@ -95,7 +95,7 @@
       }
     });
 
-    initPopup(popupMessage, contactsForm );
+    initPopup(popupMessage, contactsForm);
 
     okButton.addEventListener('click', function (evt) {
       evt.preventDefault();
