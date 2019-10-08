@@ -1,11 +1,12 @@
 'use strict';
 (function () {
-  function initPopup(popup) {
+  function initPopup(popup, form) {
     var close = popup.querySelector('.popup__close-button');
     var overlay = popup.querySelector('.popup__wrapper');
 
     close.addEventListener('click', function (evt) {
       evt.preventDefault();
+      form.reset();
       popupClose(popup);
     });
 
@@ -13,6 +14,7 @@
       if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup.classList.contains('popup--show')) {
+          form.reset();
           popupClose(popup);
         }
       }
@@ -20,6 +22,7 @@
 
     overlay.addEventListener('click', function (evt) {
       evt.preventDefault();
+      form.reset();
       popupClose(popup);
     });
   }
@@ -52,7 +55,7 @@
       userName.focus();
     });
 
-    initPopup(popupSend);
+    initPopup(popupSend, form);
     form.addEventListener('submit', function () {
       localStorage.setItem('name', name.value);
       localStorage.setItem('phone', phone.value);
@@ -79,6 +82,7 @@
 
     var popupMessage = document.querySelector('.popup--message');
     var okButton = popupMessage.querySelector('.popup__button');
+    var contactsForm = document.querySelector('.contacts__column-right form');
 
     sendButton.addEventListener('click', function (evt) {
       var fieldName = document.querySelector('#name');
@@ -91,10 +95,11 @@
       }
     });
 
-    initPopup(popupMessage);
+    initPopup(popupMessage, contactsForm );
 
     okButton.addEventListener('click', function (evt) {
       evt.preventDefault();
+      contactsForm.reset();
       popupClose(popupMessage);
     });
   }
