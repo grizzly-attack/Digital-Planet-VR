@@ -259,7 +259,7 @@
   }
 
   .explanation__title {
-    margin-bottom: 41px;
+    margin-bottom: 45px;
 
     padding-bottom: 8px;
   }
@@ -302,6 +302,7 @@
 
   .explanation__column-image {
     margin-right: 17px;
+    padding-top: 12px;
     align-self: center;
   }
 
@@ -311,8 +312,8 @@
   }
 
   .explanation__item-title {
-    padding-top: 32px;
-    padding-bottom: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .explanation__item:nth-child(1) .explanation__column-text::before {
