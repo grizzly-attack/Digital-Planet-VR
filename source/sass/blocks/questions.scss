@@ -63,6 +63,8 @@
   background-color: $white;
   color: $dark-grey;
 
+  cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;

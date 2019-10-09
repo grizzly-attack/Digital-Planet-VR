@@ -91,21 +91,21 @@
               <p class="contacts__form-text">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
 
               <div class="contacts__form-container">
-                <div class="contacts__form-field form-field">
+                <div class="contacts__form-field form-field form-field--valid">
                   <label for="name" class="visually-hidden">Ваше имя</label>
-                  <input id="name" type="text" name="name" placeholder="Ваше имя" class="valid" required="">
+                  <input id="name" type="text" name="name" placeholder="Ваше имя" required="">
                   <p class="form-field__error">Описание ошибки, дальнейшие действия</p>
                 </div>
 
                 <div class="contacts__form-field form-field form-field--invalid">
                   <label for="mail" class="visually-hidden">Ваше e-mail</label>
-                  <input id="mail" type="email" name="mail" placeholder="Ваше e-mail" class="invalid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required="">
+                  <input id="mail" type="email" name="mail" placeholder="Ваше e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required="">
                   <p class="form-field__error">Описание ошибки, дальнейшие действия</p>
                 </div>
 
-                <div class="contacts__form-textarea form-field">
+                <div class="contacts__form-textarea form-field form-field--valid">
                   <label for="question" class="visually-hidden">Что вас интересует?</label>
-                  <textarea id="question" name="question" placeholder="Что вас интересует?" class="valid" required=""></textarea>
+                  <textarea id="question" name="question" placeholder="Что вас интересует?" required=""></textarea>
                   <p class="form-field__error">Описание ошибки, дальнейшие действия</p>
                 </div>
                 <button class="button contacts__form-button" type="submit">Отправить</button>
@@ -139,13 +139,13 @@
 
         <div class="popup__input form-field form-field--invalid">
           <label for="popup-name" class="visually-hidden">Ваше имя</label>
-          <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" class="invalid" required="">
+          <input id="popup-name" type="text" name="user-name" placeholder="Ваше имя" required="">
           <p class="form-field__error">Описание ошибки, дальнейшие действия</p>
         </div>
 
         <div class="popup__input form-field form-field--invalid">
           <label for="popup-phone" class="visually-hidden">Ваш телефон</label>
-          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" class="invalid" pattern=".{16,}" required="">
+          <input id="popup-phone" type="tel" name="user-phone" placeholder="Ваш телефон" pattern=".{16,}" required="">
           <p class="form-field__error">Описание ошибки, дальнейшие действия</p>
         </div>
 
