@@ -75,24 +75,17 @@
   }
 
   function initMessagePopup() {
-    var sendButton = document.querySelector('.contacts__form-button');
-    if (!sendButton) {
+    var contactsForm = document.querySelector('.contacts__column-right form');
+    if (!contactsForm) {
       return;
     }
 
     var popupMessage = document.querySelector('.popup--message');
     var okButton = popupMessage.querySelector('.popup__button');
-    var contactsForm = document.querySelector('.contacts__column-right form');
 
-    sendButton.addEventListener('click', function (evt) {
-      var fieldName = document.querySelector('#name');
-      var fieldMail = document.querySelector('#mail');
-      var fieldQuestion = document.querySelector('#question');
-
-      if (fieldName.validity.valid && fieldMail.validity.valid && fieldQuestion.validity.valid) {
-        evt.preventDefault();
-        popupOpen(popupMessage);
-      }
+    contactsForm.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+      popupOpen(popupMessage);
     });
 
     initPopup(popupMessage, contactsForm);
