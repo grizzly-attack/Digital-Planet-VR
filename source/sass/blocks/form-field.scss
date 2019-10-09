@@ -20,7 +20,7 @@
   }
 }
 
-.form-field .valid {
+.form-field--valid input {
   border: 2px solid #1dc04b;
   background-image: url("../img/correct.svg");
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
   }
 }
 
-.form-field .invalid {
+.form-field--invalid input {
   border: 2px solid #f97676;
   background-image: url("../img/incorrect.svg");
   background-repeat: no-repeat;
