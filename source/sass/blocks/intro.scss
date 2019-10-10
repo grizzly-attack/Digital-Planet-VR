@@ -115,8 +115,6 @@
 
 @media (max-width: $tablet-width) {
   .intro {
-    display: block;
-
     &::before {
       display: none;
     }
