@@ -23,6 +23,8 @@
 
 .form-field--valid input,
 .form-field--valid textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 2px solid #1dc04b;
   background-image: url("../img/correct.svg");
   background-repeat: no-repeat;
@@ -36,6 +38,8 @@
 
 .form-field--invalid input,
 .form-field--invalid textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 2px solid #f97676;
   background-image: url("../img/incorrect.svg");
   background-repeat: no-repeat;
