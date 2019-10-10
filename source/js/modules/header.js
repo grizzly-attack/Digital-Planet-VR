@@ -15,7 +15,7 @@
     main.classList.toggle('page-main--open');
 
     if (header.classList.contains('page-header--open')) {
-      window.bodyScrollLock.disableBodyScroll();
+      window.bodyScrollLock.disableBodyScroll(document.querySelector('.page-header__container'));
     } else {
       window.bodyScrollLock.enableBodyScroll();
     }
