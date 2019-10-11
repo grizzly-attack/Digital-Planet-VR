@@ -1,23 +1,14 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-
   position: relative;
 
   flex-grow: 1;
 
   max-width: 1278px;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
+  margin-top: 11%;
 
   box-sizing: border-box;
-}
-
-.intro__main {
-  min-height: 322px;
-  margin-top: 11%;
-  flex-grow: 1;
 }
 
 .intro__wrapper {
@@ -114,13 +105,10 @@
 
 @media (max-width: $tablet-width) {
   .intro {
+    margin-top: 0;
     &::before {
       display: none;
     }
-  }
-
-  .intro__main {
-    margin-top: 0;
   }
 
   .intro__wrapper {
