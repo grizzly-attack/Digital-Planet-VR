@@ -66,4 +66,9 @@ img {
     background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
     background-attachment: scroll;
   }
+
+  @media (max-width: $tablet-width) {
+    align-items: center;
+    width: 100%;
+  }
 }
