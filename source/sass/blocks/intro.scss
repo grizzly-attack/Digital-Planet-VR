@@ -1,6 +1,4 @@
 .intro {
-  position: relative;
-
   flex-grow: 1;
 
   max-width: 1278px;
@@ -106,6 +104,7 @@
 @media (max-width: $tablet-width) {
   .intro {
     margin-top: 0;
+
     &::before {
       display: none;
     }
