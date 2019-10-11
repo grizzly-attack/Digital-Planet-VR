@@ -17,7 +17,7 @@
     if (header.classList.contains('page-header--open')) {
       window.bodyScrollLock.disableBodyScroll(header);
     } else {
-      window.bodyScrollLock.enableBodyScroll();
+      window.bodyScrollLock.enableBodyScroll(header);
     }
   });
 })();
