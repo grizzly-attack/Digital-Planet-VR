@@ -26,7 +26,6 @@ body {
 
   @media (max-width: $tablet-width) {
     display: block;
-    background-attachment: scroll;
   }
 }
 
@@ -67,6 +66,5 @@ img {
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
-    background-attachment: scroll;
   }
 }
