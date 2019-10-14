@@ -47,13 +47,12 @@
 }
 
 .page-footer__social {
-  display: flex;
-  flex-wrap: wrap;
-
   @include list-reset;
+  font-size: 0;
 }
 
 .page-footer__social-item {
+  display: inline-block;
   width: 24px;
   margin-right: 9px;
 }
@@ -93,10 +92,6 @@
   }
 
   .page-footer__social {
-    display: flex;
-    flex-wrap: wrap;
-
-    @include list-reset;
     padding-top: 20px;
     padding-bottom: 10px;
   }
