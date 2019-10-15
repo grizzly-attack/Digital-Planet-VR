@@ -24,10 +24,6 @@ body {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/body-background@2x.jpg");
   }
-
-  @media (max-width: $tablet-width) {
-    display: block;
-  }
 }
 
 img {
@@ -57,7 +53,7 @@ img {
   flex-shrink: 0;
   width: 100%;
 
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -67,9 +63,5 @@ img {
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
-  }
-
-  @media (max-width: $desktop-width) {
-    height: 100%;
   }
 }
