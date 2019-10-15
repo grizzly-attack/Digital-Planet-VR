@@ -1,4 +1,5 @@
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -66,5 +67,9 @@ img {
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
+  }
+
+  @media (max-width: $desktop-width) {
+    height: 100%;
   }
 }
