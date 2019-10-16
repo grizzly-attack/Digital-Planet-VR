@@ -51,17 +51,24 @@ img {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  width: 100%;
+  min-height: 100%;
 
-  height: 100%;
-  overflow: auto;
-  background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: 50% 0, 50% 0;
-  background-attachment: fixed;
+  &::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
+    background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: 50% 0, 50% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/body-background-main-2@1x.png"), url("../img/body-background-main@2x.jpg");
+    }
   }
 }
