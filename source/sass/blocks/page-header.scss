@@ -253,9 +253,9 @@
 
   .page-header--open {
     background-color: rgba(28, 28, 28, 0.95);
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 10;
     top: 0;
     overflow: scroll;
