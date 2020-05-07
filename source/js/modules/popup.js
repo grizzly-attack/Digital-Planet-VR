@@ -27,14 +27,14 @@
     });
   }
 
-  function popupOpen(popup) {
+  function popupOpen(popup, form) {
     popup.classList.add('popup--show');
-    window.bodyScrollLock.disableBodyScroll();
+    window.bodyScrollLock.disableBodyScroll(form);
   }
 
-  function popupClose(popup) {
+  function popupClose(popup, form) {
     popup.classList.remove('popup--show');
-    window.bodyScrollLock.enableBodyScroll();
+    window.bodyScrollLock.enableBodyScroll(form);
   }
 
   function initOrderPopup() {

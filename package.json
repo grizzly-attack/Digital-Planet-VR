@@ -1,7 +1,7 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "VR-planetary",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Сборка для проекта VR Planetary",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
